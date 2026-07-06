@@ -10,7 +10,7 @@ export function NationalFootprint() {
             Serving the Heart of India's Manufacturing
           </h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-12">
-            With over two decades of trading excellence, G L Paper Trading Tradings has established a robust distribution network spanning across 18+ states. We bridge the gap between large-scale mills and local packaging manufacturers.
+            With over two decades of trading excellence, G L Paper Trading has established a robust distribution network spanning across 18+ states. We bridge the gap between large-scale mills and local packaging manufacturers.
           </p>
           <div className="space-y-8">
             <div className="flex gap-6 items-start">

@@ -105,12 +105,13 @@ export function InquiryForm() {
         <button
           type="submit"
           disabled={status !== "idle"}
-          className={cn(
-            "w-full md:w-auto text-on-primary px-10 py-4 font-title-md text-title-md rounded transition-all flex items-center justify-center gap-2 cursor-pointer",
-            status === "idle" && "bg-primary-container hover:opacity-90",
-            status === "sending" && "bg-primary-container opacity-85",
-            status === "sent" && "bg-[#006d3b] text-white"
-          )}
+          className={`w-full md:w-auto text-white px-10 py-4 font-title-md text-title-md rounded transition-all flex items-center justify-center gap-2 cursor-pointer ${
+            status === "idle" ? "bg-brand-navy hover:bg-opacity-90" : ""
+          } ${
+            status === "sending" ? "bg-brand-navy bg-opacity-85" : ""
+          } ${
+            status === "sent" ? "bg-brand-forest" : ""
+          }`}
         >
           {status === "idle" && (
             <>

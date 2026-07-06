@@ -2,7 +2,7 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="bg-surface-dim dark:bg-inverse-surface w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant">
+    <footer className="bg-surface-dim w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant">
       <div className="md:col-span-1">
         <span className="font-headline-lg text-headline-lg text-on-primary-fixed-variant block mb-6">
           G L Paper Trading
@@ -89,11 +89,13 @@ export function Footer() {
           © 2024 G L Paper Trading Trading Enterprise. All rights reserved. ISO 9001:2015 Certified.
         </span>
         <div className="flex gap-8">
-          <a href="#" className="text-on-surface-variant hover:text-on-surface text-sm">
-            Cookie Settings
-          </a>
-          <a href="#" className="text-on-surface-variant hover:text-on-surface text-sm">
-            Accessibility
+          <a
+            href="https://aiprgmr.in"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-on-surface-variant hover:text-primary transition-colors text-sm"
+          >
+            Designed and Developed by <span className="font-bold text-primary hover:underline">AI PRGMR</span>
           </a>
         </div>
       </div>

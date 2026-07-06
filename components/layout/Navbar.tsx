@@ -10,10 +10,10 @@ export function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   const navItems = [
-    { name: "Home", href: "/" },
-    { name: "Products", href: "/kraft-paper-solutions", matchPrefix: ["/kraft-paper-solutions", "/coated-duplex-board", "/duplex-paper-board"] },
-    { name: "About Us", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Home", href: "/", icon: "home" },
+    { name: "Products", href: "/kraft-paper-solutions", icon: "inventory_2", matchPrefix: ["/kraft-paper-solutions", "/coated-duplex-board", "/duplex-paper-board"] },
+    { name: "About Us", href: "/about", icon: "corporate_fare" },
+    { name: "Contact", href: "/contact", icon: "mail" },
   ]
 
   const isLinkActive = (item: typeof navItems[0]) => {
@@ -28,27 +28,27 @@ export function Navbar() {
       <nav className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full w-full">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-display-lg text-title-md md:text-headline-lg font-bold text-on-primary-container dark:text-primary-fixed">
+          <span className="font-display-lg text-title-md md:text-headline-lg font-bold text-on-primary-container">
             G L Paper Trading
           </span>
         </Link>
 
         {/* Desktop Nav Links */}
-        <div className="hidden md:flex items-center gap-4 lg:gap-8 pt-2">
+        <div className="hidden md:flex items-center gap-3 lg:gap-4 pt-1">
           {navItems.map((item) => {
             const active = isLinkActive(item)
             return (
               <Link
                 key={item.name}
                 href={item.href}
-                className={cn(
-                  "font-title-sm text-title-sm pb-1 transition-colors duration-200 cursor-pointer",
+                className={`relative px-4 py-2 rounded-full font-title-sm text-sm transition-all duration-300 flex items-center gap-1.5 cursor-pointer border ${
                   active
-                    ? "text-primary border-b-2 border-primary"
-                    : "text-on-surface-variant hover:text-primary"
-                )}
+                    ? "bg-primary text-white border-primary shadow-sm shadow-primary/10 scale-105"
+                    : "border-transparent text-on-surface-variant hover:text-primary hover:bg-surface-container-high/80"
+                }`}
               >
-                {item.name}
+                <span className="material-symbols-outlined text-[18px] shrink-0">{item.icon}</span>
+                <span className="font-semibold tracking-wide">{item.name}</span>
               </Link>
             )
           })}
@@ -57,7 +57,7 @@ export function Navbar() {
         {/* Right Actions */}
         <div className="hidden md:flex items-center gap-6">
           <Link href="/contact">
-            <button className="bg-primary-container text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all duration-300 transform active:scale-95">
+            <button className="bg-primary text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all duration-300 transform active:scale-95">
               Request Quote
             </button>
           </Link>
@@ -79,7 +79,7 @@ export function Navbar() {
 
       {/* Mobile Nav Links Dropdown */}
       {mobileMenuOpen && (
-        <div className="md:hidden absolute top-20 left-0 w-full bg-surface border-b border-outline-variant py-4 px-margin-mobile flex flex-col gap-4 shadow-lg animate-in slide-in-from-top duration-200 z-50">
+        <div className="md:hidden absolute top-20 left-0 w-full bg-surface border-b border-outline-variant py-6 px-margin-mobile flex flex-col gap-3 shadow-lg animate-in slide-in-from-top duration-200 z-50">
           {navItems.map((item) => {
             const active = isLinkActive(item)
             return (
@@ -87,20 +87,20 @@ export function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={cn(
-                  "font-title-md text-title-md py-2 border-b border-outline-variant/30",
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl border text-sm font-semibold tracking-wide transition-all ${
                   active
-                    ? "text-primary font-bold"
-                    : "text-on-surface-variant hover:text-primary"
-                )}
+                    ? "bg-primary border-primary text-white shadow-sm"
+                    : "bg-surface-container-low border-outline-variant/30 text-on-surface-variant hover:text-primary hover:bg-surface-container-high"
+                }`}
               >
-                {item.name}
+                <span className="material-symbols-outlined text-[20px] shrink-0">{item.icon}</span>
+                <span>{item.name}</span>
               </Link>
             )
           })}
-          <div className="flex items-center justify-between pt-2">
-            <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
-              <button className="bg-primary-container text-white px-6 py-2.5 rounded-lg font-semibold w-full text-center">
+          <div className="flex items-center justify-between pt-4 border-t border-outline-variant/30 mt-2">
+            <Link href="/contact" className="w-full" onClick={() => setMobileMenuOpen(false)}>
+              <button className="bg-primary text-white px-6 py-3 rounded-lg font-semibold w-full text-center hover:opacity-90 active:scale-[0.98] transition-all">
                 Request Quote
               </button>
             </Link>
