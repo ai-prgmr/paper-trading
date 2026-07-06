@@ -5,13 +5,16 @@ export function HeroSection() {
     <section className="relative h-[870px] w-full overflow-hidden">
       <div className="absolute inset-0 z-0">
         <div
-          className="w-full h-full bg-cover bg-center industrial-overlay"
+          className="w-full h-full bg-cover bg-center"
           style={{
             backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBW5f8yzOeqJVH0g_lB4M_ElwJN5KpzJTkfOqRg1Iu5k464jYdqVmNyeJx2wX1vNWh1be6DFonKSS9rWiDlD4PUXIZDQhzpz6AUwaSGfVWSyv0qT1wR5oACWQG1rljzxEB7jYKECdqSwDuT5Q8PKc8DrM0RxxOjYOuYl4BPE2ZYbB2KaI0DOz7x7YDXLx6aRCSakAvbirKF9Ioh5mvEZb_pCos32U1DnmJmotlmdyrB33CtGLyl8NtA')`,
           }}
         />
+        {/* Dark blend tint and horizontal text-readability gradient */}
+        <div className="absolute inset-0 bg-[#0A1D37]/70 mix-blend-multiply z-10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0A1D37]/95 via-[#0A1D37]/50 to-transparent z-10" />
       </div>
-      <div className="relative z-10 h-full max-w-container-max mx-auto flex flex-col justify-center px-margin-mobile md:px-margin-desktop text-white">
+      <div className="relative z-20 h-full max-w-container-max mx-auto flex flex-col justify-center px-margin-mobile md:px-margin-desktop text-white">
         <span className="font-label-sm text-label-sm uppercase tracking-widest bg-secondary-container/20 text-secondary-container px-3 py-1 w-fit mb-6 rounded">
           ISO 9001:2015 Certified Enterprise
         </span>
@@ -19,7 +22,7 @@ export function HeroSection() {
           Redefining Excellence in Industrial Paper Solutions
         </h1>
         <p className="font-body-lg text-body-lg max-w-xl mb-10 opacity-90 leading-relaxed">
-          Connecting global supply with local demand. G L Paper Trading Trading provides superior grade coated duplex boards and kraft paper for India's growing industrial needs.
+          Connecting global supply with local demand. G L Paper Trading provides superior grade coated duplex boards and kraft paper for India's growing industrial needs.
         </p>
         <div className="flex flex-wrap gap-4">
           <Link href="/kraft-paper-solutions">
@@ -36,7 +39,7 @@ export function HeroSection() {
         </div>
       </div>
       {/* Value Props Overlay */}
-      <div className="absolute bottom-0 left-0 w-full bg-surface-container-lowest/10 backdrop-blur-md border-t border-white/10 hidden lg:block">
+      <div className="absolute bottom-0 left-0 w-full bg-surface-container-lowest/10 backdrop-blur-md border-t border-white/10 hidden lg:block z-20">
         <div className="max-w-container-max mx-auto px-margin-desktop py-8 grid grid-cols-3 divide-x divide-white/20">
           <div className="flex items-center gap-4 px-8 text-white">
             <span className="material-symbols-outlined text-4xl" style={{ fontVariationSettings: "'FILL' 1" }}>
