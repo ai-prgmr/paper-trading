@@ -1,11 +1,12 @@
 import Link from "next/link"
+import { Badge } from "@/components/ui/badge"
 
 export function ProductCategories() {
   return (
     <section className="py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
       <div className="flex flex-col items-center text-center mb-16">
         <h2 className="font-headline-lg text-headline-lg text-on-primary-container mb-4">
-          Industrial Paper Portfolio
+          Green Packaging & Industrial Solutions
         </h2>
         <div className="w-20 h-1 bg-on-secondary-container"></div>
         <p className="mt-6 font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
@@ -15,7 +16,7 @@ export function ProductCategories() {
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">
         {/* Large Featured Product */}
         <div className="md:col-span-8 group relative overflow-hidden rounded bg-surface-container-low h-[500px] bento-card border border-outline-variant">
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-[#064E3B]/90 via-[#064E3B]/30 to-transparent z-10"></div>
           <div
             className="absolute inset-0 w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
             style={{
@@ -23,18 +24,23 @@ export function ProductCategories() {
             }}
           />
           <div className="absolute bottom-0 left-0 p-10 z-20 text-white">
-            <span className="bg-on-tertiary-container/30 backdrop-blur-sm text-tertiary-fixed px-3 py-1 rounded text-sm mb-4 inline-block">
-              Best Seller
-            </span>
+            <div className="flex gap-2 items-center mb-4">
+              <span className="bg-on-tertiary-container/30 backdrop-blur-sm text-white px-3 py-1 rounded text-sm inline-block">
+                Best Seller
+              </span>
+              <Badge variant="sage" className="backdrop-blur-sm px-3 py-1 border border-white/20 text-xs">
+                Plastic Substitute
+              </Badge>
+            </div>
             <h3 className="font-headline-lg text-headline-lg mb-2">Coated Duplex Board</h3>
-            <p className="max-w-md opacity-80 mb-6 font-body-md text-sm">
-              Premium multi-layered board with a smooth white surface, ideal for high-quality packaging and printing.
+            <p className="max-w-md opacity-90 mb-6 font-body-md text-sm leading-relaxed">
+              Premium sustainable alternative to single-use plastics. High-performance clay-coated boards tailored for high-fidelity printing and circular packaging design.
             </p>
             <div className="flex gap-4 mb-6">
               <span className="text-xs bg-white/20 px-2 py-1 rounded">230 - 450 GSM</span>
               <span className="text-xs bg-white/20 px-2 py-1 rounded">HWC / LWC Available</span>
             </div>
-            <Link href="/coated-duplex-board" className="bg-white text-primary px-6 py-2.5 rounded font-semibold text-sm hover:bg-primary-fixed-dim hover:text-on-primary-fixed transition-all inline-block">
+            <Link href="/coated-duplex-board" className="bg-white text-[#064E3B] px-6 py-2.5 rounded font-semibold text-sm hover:bg-white/95 transition-all inline-block">
               View Catalog
             </Link>
           </div>
@@ -42,7 +48,7 @@ export function ProductCategories() {
 
         {/* Secondary Product */}
         <div className="md:col-span-4 group relative overflow-hidden rounded bg-surface-container-low h-[500px] bento-card border border-outline-variant">
-          <div className="absolute inset-0 bg-gradient-to-t from-primary-container/80 via-transparent to-transparent z-10"></div>
+          <div className="absolute inset-0 bg-linear-to-t from-[#064E3B]/90 via-[#064E3B]/30 to-transparent z-10"></div>
           <div
             className="absolute inset-0 w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
             style={{
@@ -51,8 +57,8 @@ export function ProductCategories() {
           />
           <div className="absolute bottom-0 left-0 p-8 z-20 text-white">
             <h3 className="font-title-md text-title-md font-bold mb-2">Kraft Paper</h3>
-            <p className="text-sm opacity-80 mb-4 font-body-md">
-              High-strength, durable brown paper for eco-friendly bags and industrial wrap.
+            <p className="text-sm opacity-90 mb-4 font-body-md leading-relaxed">
+              High-strength, 100% recyclable fibers for circular-economy packaging.
             </p>
             <Link href="/kraft-paper-solutions" className="text-white flex items-center gap-1 group/btn font-semibold hover:underline">
               View Specs{" "}

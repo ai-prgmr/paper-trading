@@ -1,12 +1,12 @@
 import Link from "next/link"
-
+import Image from "next/image"
 export function Footer() {
   return (
     <footer className="bg-surface-dim w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant">
       <div className="md:col-span-1">
-        <span className="font-headline-lg text-headline-lg text-on-primary-fixed-variant block mb-6">
-          G L Paper Trading
-        </span>
+        <Link href="/" className="flex items-center gap-2">
+          <Image alt="G L Paper Trading Company" src="/paper-trading/logo-5.png" width={300} height={300} />
+        </Link>
         <p className="text-on-surface-variant font-body-md mb-6 leading-relaxed">
           ISO 9001:2015 certified trading enterprise specializing in high-grade industrial paper and board.
         </p>

@@ -43,6 +43,11 @@ export function CertifiedExcellence() {
             </p>
           </div>
         </div>
+        <div className="mt-12 text-center">
+          <p className="text-sm text-on-surface-variant font-body-md opacity-75 italic">
+            Partnering exclusively with mills holding these global sustainability standards.
+          </p>
+        </div>
       </div>
     </section>
   )

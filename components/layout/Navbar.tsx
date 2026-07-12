@@ -4,6 +4,7 @@ import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { cn } from "@/lib/utils"
+import Image from "next/image"
 
 export function Navbar() {
   const pathname = usePathname()
@@ -24,13 +25,11 @@ export function Navbar() {
   }
 
   return (
-    <header className="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant h-20">
+    <header className="fixed top-0 left-0 w-full z-50 bg-surface/90 backdrop-blur-md border-b border-outline-variant h-30">
       <nav className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full w-full">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <span className="font-display-lg text-title-md md:text-headline-lg font-bold text-on-primary-container">
-            G L Paper Trading
-          </span>
+          <Image alt="G L Paper Trading Company" src="/paper-trading/logo-5.png" width={150} height={150} />
         </Link>
 
         {/* Desktop Nav Links */}
@@ -41,13 +40,12 @@ export function Navbar() {
               <Link
                 key={item.name}
                 href={item.href}
-                className={`relative px-4 py-2 rounded-full font-title-sm text-sm transition-all duration-300 flex items-center gap-1.5 cursor-pointer border ${
-                  active
-                    ? "bg-primary text-white border-primary shadow-sm shadow-primary/10 scale-105"
-                    : "border-transparent text-on-surface-variant hover:text-primary hover:bg-surface-container-high/80"
-                }`}
+                className={`relative px-4 py-2 rounded-full font-title-sm text-sm transition-all duration-300 flex items-center gap-1.5 cursor-pointer border ${active
+                  ? "bg-primary text-white border-primary shadow-sm shadow-primary/10 scale-105"
+                  : "border-transparent text-on-surface-variant hover:text-primary hover:bg-surface-container-high/80"
+                  }`}
               >
-                <span className="material-symbols-outlined text-[18px] shrink-0">{item.icon}</span>
+                {/* <span className="material-symbols-outlined text-[18px] shrink-0">{item.icon}</span> */}
                 <span className="font-semibold tracking-wide">{item.name}</span>
               </Link>
             )
@@ -87,13 +85,12 @@ export function Navbar() {
                 key={item.name}
                 href={item.href}
                 onClick={() => setMobileMenuOpen(false)}
-                className={`flex items-center gap-3 px-4 py-3 rounded-xl border text-sm font-semibold tracking-wide transition-all ${
-                  active
-                    ? "bg-primary border-primary text-white shadow-sm"
-                    : "bg-surface-container-low border-outline-variant/30 text-on-surface-variant hover:text-primary hover:bg-surface-container-high"
-                }`}
+                className={`flex items-center gap-3 px-4 py-3 rounded-xl border text-sm font-semibold tracking-wide transition-all ${active
+                  ? "bg-primary border-primary text-white shadow-sm"
+                  : "bg-surface-container-low border-outline-variant/30 text-on-surface-variant hover:text-primary hover:bg-surface-container-high"
+                  }`}
               >
-                <span className="material-symbols-outlined text-[20px] shrink-0">{item.icon}</span>
+                {/* <span className="material-symbols-outlined text-[20px] shrink-0">{item.icon}</span> */}
                 <span>{item.name}</span>
               </Link>
             )
