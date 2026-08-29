@@ -84,7 +84,7 @@ export function InquiryForm() {
               className="bg-white border border-outline-variant px-4 py-3 focus:ring-1 focus:ring-primary-container focus:border-primary-container outline-none transition-all rounded font-body-md text-sm text-primary appearance-none"
             >
               <option>Select a category</option>
-              <option>Coated Duplex Board</option>
+              <option>Box Board (FBB & SBS)</option>
               <option>Kraft Paper</option>
               <option>Duplex Paper Board</option>
               <option>Other Industrial Grade</option>

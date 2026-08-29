@@ -14,8 +14,8 @@ export function ProductSidebar() {
       icon: "inventory_2",
     },
     {
-      name: "Coated Duplex Board",
-      href: "/coated-duplex-board",
+      name: "Box Board (FBB / SBS)",
+      href: "/box-board",
       icon: "layers",
     },
     {

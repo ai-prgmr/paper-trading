@@ -14,11 +14,11 @@ export function Footer() {
           <a href="#" className="text-on-surface-variant hover:text-tertiary-fixed transition-colors">
             <span className="material-symbols-outlined">public</span>
           </a>
-          <a href="#" className="text-on-surface-variant hover:text-tertiary-fixed transition-colors">
+          <a href="mailto:info@gltradingcompany.com" className="text-on-surface-variant hover:text-tertiary-fixed transition-colors" title="info@gltradingcompany.com">
             <span className="material-symbols-outlined">mail</span>
           </a>
-          <a href="#" className="text-on-surface-variant hover:text-tertiary-fixed transition-colors">
-            <span className="material-symbols-outlined">location_on</span>
+          <a href="https://wa.me/919301532323" target="_blank" rel="noopener noreferrer" className="text-on-surface-variant hover:text-[#25D366] transition-colors" title="WhatsApp: +91 93015 32323">
+            <span className="material-symbols-outlined">chat</span>
           </a>
         </div>
       </div>
@@ -26,8 +26,8 @@ export function Footer() {
         <h4 className="font-title-md text-title-md font-bold mb-6 text-on-surface">Product Range</h4>
         <ul className="space-y-4">
           <li>
-            <Link href="/coated-duplex-board" className="text-on-surface-variant hover:text-on-surface transition-colors">
-              Coated Duplex Board
+            <Link href="/box-board" className="text-on-surface-variant hover:text-on-surface transition-colors">
+              Box Board (FBB & SBS)
             </Link>
           </li>
           <li>
@@ -81,7 +81,12 @@ export function Footer() {
         </p>
         <div className="bg-primary-container/10 p-4 rounded border border-primary-container/20">
           <span className="block text-sm font-bold text-on-primary-fixed-variant mb-1">Sales Inquiry</span>
-          <span className="block text-lg font-bold text-on-surface">+91 (011) 4567 8901</span>
+          <a href="tel:+919301532323" className="block text-lg font-bold text-on-surface hover:text-primary transition-colors">
+            +91 93015 32323
+          </a>
+          <a href="mailto:info@gltradingcompany.com" className="block text-xs text-on-surface-variant hover:text-primary mt-1">
+            info@gltradingcompany.com
+          </a>
         </div>
       </div>
       <div className="md:col-span-4 pt-12 border-t border-outline-variant mt-12 flex flex-col md:flex-row justify-between items-center gap-6">

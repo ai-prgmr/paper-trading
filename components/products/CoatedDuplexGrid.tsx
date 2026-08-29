@@ -74,7 +74,6 @@ export function CoatedDuplexGrid() {
           <ProductDescriptionCard
             key={gsm}
             title={`${gsm} GSM Coated Duplex Board`}
-            price="₹ 36 / Kg"
             description="Premium multi-layered duplex board with a high-brightness coated front surface and sturdy grey back. Perfect for high-speed automated packaging lines."
             badgeText={`${gsm} GSM`}
             image="https://lh3.googleusercontent.com/aida-public/AB6AXuBwZSA02nG5EZd7ONi0PQGL8dSRJzUyFP8KrYoGkOEU598JJrE9tCKOAY6gwcnabxBJDnjtWt1_IFxEBTl6zT_gk4JicjuyHGALhUCkfj-_YD3NXfjv5P982T0zb7t6MOQpVV0UmltG0xrPqgesRM_BiWZwhG5PBIf68SLAnmO5XvggB_NR9cPlQSopk-asXFbfCzhIE1km3jfNNQc0CotiwvAwL-qnkokiZalOMqj46pt8rHiTe4sO"

@@ -26,21 +26,21 @@ export function ProductCategories() {
           <div className="absolute bottom-0 left-0 p-10 z-20 text-white">
             <div className="flex gap-2 items-center mb-4">
               <span className="bg-on-tertiary-container/30 backdrop-blur-sm text-white px-3 py-1 rounded text-sm inline-block">
-                Best Seller
+                Premium Virgin Grade
               </span>
               <Badge variant="sage" className="backdrop-blur-sm px-3 py-1 border border-white/20 text-xs">
-                Plastic Substitute
+                FDA Food Grade
               </Badge>
             </div>
-            <h3 className="font-headline-lg text-headline-lg mb-2">Coated Duplex Board</h3>
+            <h3 className="font-headline-lg text-headline-lg mb-2">Box Board (FBB & SBS)</h3>
             <p className="max-w-md opacity-90 mb-6 font-body-md text-sm leading-relaxed">
-              Premium sustainable alternative to single-use plastics. High-performance clay-coated boards tailored for high-fidelity printing and circular packaging design.
+              Superior virgin paperboard solutions including multi-layer Folding Box Board (FBB) and pure Solid Bleached Sulfate (SBS) boards for luxury folding cartons and pharmaceutical packaging.
             </p>
             <div className="flex gap-4 mb-6">
-              <span className="text-xs bg-white/20 px-2 py-1 rounded">230 - 450 GSM</span>
-              <span className="text-xs bg-white/20 px-2 py-1 rounded">HWC / LWC Available</span>
+              <span className="text-xs bg-white/20 px-2 py-1 rounded">180 - 450 GSM</span>
+              <span className="text-xs bg-white/20 px-2 py-1 rounded">FBB / SBS Available</span>
             </div>
-            <Link href="/coated-duplex-board" className="bg-white text-[#064E3B] px-6 py-2.5 rounded font-semibold text-sm hover:bg-white/95 transition-all inline-block">
+            <Link href="/box-board" className="bg-white text-[#064E3B] px-6 py-2.5 rounded font-semibold text-sm hover:bg-white/95 transition-all inline-block">
               View Catalog
             </Link>
           </div>

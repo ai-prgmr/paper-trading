@@ -14,8 +14,8 @@ export function ProductCategoryMobileNav() {
       icon: "inventory_2",
     },
     {
-      name: "Coated Duplex",
-      href: "/coated-duplex-board",
+      name: "Box Board",
+      href: "/box-board",
       icon: "layers",
     },
     {

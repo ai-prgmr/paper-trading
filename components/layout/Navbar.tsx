@@ -3,7 +3,6 @@
 import { useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { cn } from "@/lib/utils"
 import Image from "next/image"
 
 export function Navbar() {
@@ -12,7 +11,7 @@ export function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/", icon: "home" },
-    { name: "Products", href: "/kraft-paper-solutions", icon: "inventory_2", matchPrefix: ["/kraft-paper-solutions", "/coated-duplex-board", "/duplex-paper-board"] },
+    { name: "Products", href: "/kraft-paper-solutions", icon: "inventory_2", matchPrefix: ["/kraft-paper-solutions", "/box-board", "/duplex-paper-board"] },
     { name: "About Us", href: "/about", icon: "corporate_fare" },
     { name: "Contact", href: "/contact", icon: "mail" },
   ]
@@ -45,7 +44,6 @@ export function Navbar() {
                   : "border-transparent text-on-surface-variant hover:text-primary hover:bg-surface-container-high/80"
                   }`}
               >
-                {/* <span className="material-symbols-outlined text-[18px] shrink-0">{item.icon}</span> */}
                 <span className="font-semibold tracking-wide">{item.name}</span>
               </Link>
             )

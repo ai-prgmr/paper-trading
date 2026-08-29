@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/layout/Navbar"
 import { AboutHero } from "@/components/about/AboutHero"
+import { FoundersMessage } from "@/components/about/FoundersMessage"
 import { CompanyOverview } from "@/components/about/CompanyOverview"
 import { MissionVision } from "@/components/about/MissionVision"
 import { QualityCommitment } from "@/components/about/QualityCommitment"
@@ -13,6 +14,7 @@ export default function AboutPage() {
       <Navbar />
       <main className="flex-1 pt-20">
         <AboutHero />
+        <FoundersMessage />
         <CompanyOverview />
         <MissionVision />
         <QualityCommitment />

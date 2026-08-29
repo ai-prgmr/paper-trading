@@ -23,9 +23,20 @@ export function ContactDetails() {
             <div>
               <h4 className="font-title-md text-title-md text-primary font-bold">Phone & WhatsApp</h4>
               <p className="text-on-surface-variant font-body-md mt-1 text-sm">
-                +91 (22) 4567 8900
-                <br />
-                +91 98765 43210
+                <a
+                  href="tel:+919301532323"
+                  className="hover:text-primary transition-colors font-medium text-primary block"
+                >
+                  +91 93015 32323
+                </a>
+                <a
+                  href="https://wa.me/919301532323?text=Hello%20G%20L%20Paper%20Trading%2C%20I%20would%20like%20to%20inquire%20about%20your%20paper%20products."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-[#25D366] hover:underline font-semibold inline-flex items-center gap-1 mt-1"
+                >
+                  Chat on WhatsApp &rarr;
+                </a>
               </p>
             </div>
           </div>
@@ -36,9 +47,12 @@ export function ContactDetails() {
             <div>
               <h4 className="font-title-md text-title-md text-primary font-bold">Email Inquiries</h4>
               <p className="text-on-surface-variant font-body-md mt-1 text-sm">
-                sales@bharatpaper.com
-                <br />
-                logistics@bharatpaper.com
+                <a
+                  href="mailto:info@gltradingcompany.com"
+                  className="hover:text-primary transition-colors font-medium text-primary block"
+                >
+                  info@gltradingcompany.com
+                </a>
               </p>
             </div>
           </div>
