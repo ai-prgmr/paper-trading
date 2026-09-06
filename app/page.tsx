@@ -5,7 +5,6 @@ import { SustainabilityMetrics } from "@/components/home/SustainabilityMetrics"
 import { ProductCategories } from "@/components/home/ProductCategories"
 import { AggregatorAdvantage } from "@/components/home/AggregatorAdvantage"
 import { CTASection } from "@/components/home/CTASection"
-import { CertifiedExcellence } from "@/components/home/CertifiedExcellence"
 import { Footer } from "@/components/layout/Footer"
 
 export default function Page() {
@@ -19,7 +18,7 @@ export default function Page() {
         <ProductCategories />
         <AggregatorAdvantage />
         <CTASection />
-        <CertifiedExcellence />
+
       </main>
       <Footer />
     </div>

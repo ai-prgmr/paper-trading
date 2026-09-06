@@ -26,7 +26,7 @@ export function FoundersMessage() {
           {/* Card 1: Govindlal ji */}
           <div className="bg-white rounded-2xl border border-outline-variant shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
             <div className="relative h-64 sm:h-72 overflow-hidden bg-surface-container">
-              <img src="/paper-trading/govindlal-kabra.png" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" alt="Late Shri Govindlal ji Kabra" />
+              <img src="/paper-trading/govindlal-kabra.png" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" alt="Late Shri Govindlal ji Kabra" />
               <div className="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/30 to-transparent"></div>
               <div className="absolute bottom-5 left-5 right-5 text-white">
                 <span className="bg-white/20 backdrop-blur-md px-2.5 py-1 rounded text-[10px] uppercase font-bold tracking-wider mb-2.5 inline-block border border-white/20">The Genesis • 1940</span>

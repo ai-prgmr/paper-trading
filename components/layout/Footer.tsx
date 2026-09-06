@@ -2,7 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 export function Footer() {
   return (
-    <footer className="bg-surface-dim w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-gutter border-t border-outline-variant">
+    <footer className="bg-surface-dim w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant">
       <div className="md:col-span-1">
         <Link href="/" className="flex items-center gap-2">
           <Image alt="GL Trading Company" src="/paper-trading/logo-6.png" width={300} height={300} />
@@ -67,7 +67,13 @@ export function Footer() {
           </a>
         </div>
       </div>
-      <div className="md:col-span-3 pt-12 border-t border-outline-variant mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
+      <div>
+        <h4 className="font-title-md text-title-md font-bold mb-6 text-on-surface">Contact card</h4>
+        <div className="inline-block bg-white p-2 rounded-xl shadow-sm border border-outline-variant">
+          <Image src="/paper-trading/qr-code.png" alt="QR Code" width={300} height={300} className="rounded-lg" />
+        </div>
+      </div>
+      <div className="md:col-span-4 pt-12 border-t border-outline-variant mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
         <span className="text-on-surface-variant text-sm">
           © 2026 GL Trading Company. All rights reserved.
         </span>
