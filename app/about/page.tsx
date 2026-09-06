@@ -4,8 +4,6 @@ import { FoundersMessage } from "@/components/about/FoundersMessage"
 import { CompanyOverview } from "@/components/about/CompanyOverview"
 import { MissionVision } from "@/components/about/MissionVision"
 import { QualityCommitment } from "@/components/about/QualityCommitment"
-import { GlobalLocalPresence } from "@/components/about/GlobalLocalPresence"
-import { Infrastructure } from "@/components/about/Infrastructure"
 import { Footer } from "@/components/layout/Footer"
 
 export default function AboutPage() {
@@ -18,8 +16,6 @@ export default function AboutPage() {
         <CompanyOverview />
         <MissionVision />
         <QualityCommitment />
-        <GlobalLocalPresence />
-        <Infrastructure />
       </main>
       <Footer />
     </div>

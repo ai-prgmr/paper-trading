@@ -10,7 +10,7 @@ export function FoundersMessage() {
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <span className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-1.5 rounded-full font-label-sm text-xs uppercase tracking-widest font-bold">
             <span className="material-symbols-outlined text-sm">history_edu</span>
-            30 Years of Heritage & Vision
+            80+ Years of Heritage & Vision
           </span>
           <h2 className="font-headline-lg text-headline-lg text-primary">
             Founders' Message & Journey
@@ -20,115 +20,90 @@ export function FoundersMessage() {
           </p>
         </div>
 
-        {/* Main Grid: Story & Founders Visual */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
-          {/* Left Column: The Narrative */}
-          <div className="lg:col-span-7 space-y-8 text-left">
-            {/* Govindlal ji Kabra's Foundation */}
-            <div className="bg-white p-8 rounded-xl border border-outline-variant shadow-xs space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">
-                  <span className="material-symbols-outlined text-xl">workspace_premium</span>
-                </div>
-                <div>
-                  <h3 className="font-title-md text-title-md font-bold text-primary">
-                    The Foundation: Mr. Govindlal ji Kabra
-                  </h3>
-                  <p className="text-xs uppercase tracking-wider text-on-surface-variant font-semibold">
-                    The Genesis • 30+ Years Ago
-                  </p>
-                </div>
+        {/* Bento Grid Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+          
+          {/* Card 1: Govindlal ji */}
+          <div className="bg-white rounded-2xl border border-outline-variant shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
+            <div className="relative h-64 sm:h-72 overflow-hidden bg-surface-container">
+              <img src="/paper-trading/govindlal-kabra.png" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" alt="Late Shri Govindlal ji Kabra" />
+              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+              <div className="absolute bottom-5 left-5 right-5 text-white">
+                <span className="bg-white/20 backdrop-blur-md px-2.5 py-1 rounded text-[10px] uppercase font-bold tracking-wider mb-2.5 inline-block border border-white/20">The Genesis • 1940</span>
+                <h3 className="font-title-lg font-bold text-xl">Late Shri Govindlal ji Kabra</h3>
+                <p className="text-xs text-white/90 font-medium mt-1">The Foundation</p>
               </div>
-              <p className="text-on-surface-variant font-body-md text-sm leading-relaxed">
-                Three decades ago, <strong>Mr. Govindlal ji Kabra</strong> embarked on a mission to bring unmatched transparency, integrity, and personal accountability to the Cloth distribution trade. In an era when Cloth trading relied heavily on fragmented channels, he built lasting bonds across Cloth mills and manufacturing clients through one golden rule: <em>a commitment made is a commitment honored</em>. His hard work and principles established the bedrock of G L Paper Trading.
-              </p>
             </div>
-
-            {/* Vedant Kabra Taking Vision Forward */}
-            <div className="bg-white p-8 rounded-xl border border-outline-variant shadow-xs space-y-4">
-              <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed font-bold">
-                  <span className="material-symbols-outlined text-xl">trending_up</span>
-                </div>
-                <div>
-                  <h3 className="font-title-md text-title-md font-bold text-primary">
-                    The Modern Era: Mr. Vedant Kabra
-                  </h3>
-                  <p className="text-xs uppercase tracking-wider text-secondary font-bold">
-                    Founder & Managing Director • Driving Forward
-                  </p>
-                </div>
-              </div>
+            <div className="p-6 md:p-8 flex-1">
               <p className="text-on-surface-variant font-body-md text-sm leading-relaxed">
-                Today, <strong>Mr. Vedant Kabra</strong> is taking that enduring vision forward with strategic vigor and modern innovation. Guided by the values instilled by Mr. Govindlal ji Kabra, Vedant has transformed the enterprise into a tech-enabled, multi-grade paper supplier. Under his stewardship, G L Paper Trading has expanded its reach across FMCG, e-commerce, pharmaceutical, and heavy packaging sectors—pioneering 100% recyclable Kraft paper and Coated Duplex boards while maintaining prompt, nationwide logistics.
+                In 1940, a young man with lots of ambition and vision started his journey from Rajasthan to Indore. Arriving in a new city with new dreams, he started a cloth business in association with the pride of cloth mills of Indore. His hard work and principles established the bedrock of our legacy.
               </p>
-            </div>
-
-            {/* Key Milestones Bar */}
-            <div className="grid grid-cols-3 gap-4 pt-2">
-              <div className="border-l-2 border-primary pl-4 py-1">
-                <span className="block font-headline-lg text-primary font-bold">1994</span>
-                <span className="text-xs text-on-surface-variant uppercase font-medium">Founding Year</span>
-              </div>
-              <div className="border-l-2 border-secondary pl-4 py-1">
-                <span className="block font-headline-lg text-primary font-bold">30+</span>
-                <span className="text-xs text-on-surface-variant uppercase font-medium">Years of Trust</span>
-              </div>
-              <div className="border-l-2 border-tertiary pl-4 py-1">
-                <span className="block font-headline-lg text-primary font-bold">100%</span>
-                <span className="text-xs text-on-surface-variant uppercase font-medium">Circular Packaging</span>
-              </div>
             </div>
           </div>
 
-          {/* Right Column: Founder's Image Showcase Section */}
-          <div className="lg:col-span-5 flex flex-col items-center">
-            <div className="w-full relative group">
-              {/* Decorative background aura */}
-              <div className="absolute -inset-3 bg-gradient-to-tr from-primary/20 via-secondary/15 to-transparent rounded-2xl -rotate-1 group-hover:rotate-0 transition-transform duration-500"></div>
+          {/* Card 2: Rajesh Kabra */}
+          <div className="bg-white rounded-2xl border border-outline-variant shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
+            <div className="relative h-64 sm:h-72 overflow-hidden bg-surface-container">
+              <img src="/paper-trading/rajesh-kabra.png" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" alt="Mr. Rajesh Kabra" />
+              <div className="absolute inset-0 bg-gradient-to-t from-secondary/90 via-secondary/30 to-transparent"></div>
+              <div className="absolute bottom-5 left-5 right-5 text-white">
+                <span className="bg-white/20 backdrop-blur-md px-2.5 py-1 rounded text-[10px] uppercase font-bold tracking-wider mb-2.5 inline-block border border-white/20">Paper Industry Era • 1976</span>
+                <h3 className="font-title-lg font-bold text-xl">Mr. Rajesh Kabra</h3>
+                <p className="text-xs text-white/90 font-medium mt-1">Diversification</p>
+              </div>
+            </div>
+            <div className="p-6 md:p-8 flex-1">
+              <p className="text-on-surface-variant font-body-md text-sm leading-relaxed">
+                As the cloth industry reached saturation, the young hands were ready to take over the legacy. In 1976, he took the business further and diversified from the cloth business to the new and emerging market of the paper industry. With his vision, skills, and relationships, we set a benchmark and successfully made the growth happen.
+              </p>
+            </div>
+          </div>
 
-              <div className="relative bg-white p-3 rounded-2xl border border-outline-variant shadow-md overflow-hidden">
-                {/* Founder Image Frame Container */}
-                <div className="relative aspect-[4/5] w-full rounded-xl overflow-hidden bg-surface-container">
-                  <img
-                    className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                    alt="Mr. Vedant Kabra and Founders - G L Paper Trading Company"
-                    src="/paper-trading/vedant-kabra-founder.png"
-                  />
-
-                  {/* Top Badge */}
-                  <div className="absolute top-4 left-4 bg-primary/90 backdrop-blur-md text-white px-3 py-1.5 rounded-lg text-xs font-bold tracking-wider uppercase flex items-center gap-1.5 shadow-sm">
-                    <span className="material-symbols-outlined text-sm">shield</span>
-                    Leadership & Heritage
-                  </div>
-
-                  {/* Bottom Gradient Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/20 to-transparent"></div>
-
-                  {/* Founder Caption inside Image */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white text-left">
-                    <p className="font-headline-md text-xl font-bold">Mr. Vedant Kabra</p>
-                    <p className="text-xs text-white/80 font-medium">Founder & Managing Director</p>
-                    <p className="text-[11px] text-white/60 mt-0.5">Carrying forward the legacy of Mr. Govindlal ji Kabra</p>
-                  </div>
-                </div>
-
-                {/* Founder's Direct Quote Callout */}
-                <div className="p-6 text-left bg-surface-container-low rounded-xl mt-3 border border-outline-variant/60">
-                  <span className="material-symbols-outlined text-secondary text-2xl select-none">
-                    format_quote
-                  </span>
-                  <p className="font-body-md italic text-xs text-primary font-medium mt-1 leading-relaxed">
-                    "Our foundation was built on trust, client relationships, and punctuality thirty years ago. Today, we carry that same sacred promise into every metric ton of kraft and duplex board we supply."
-                  </p>
-                  <p className="font-label-sm text-[11px] uppercase tracking-wider text-on-surface-variant font-bold mt-3">
-                    — Vedant Kabra, Founder
-                  </p>
-                </div>
+          {/* Card 3: Vedant Kabra */}
+          <div className="bg-white rounded-2xl border border-outline-variant shadow-sm overflow-hidden flex flex-col md:flex-row md:col-span-2 group hover:shadow-md transition-shadow duration-300">
+            <div className="relative h-72 md:h-auto md:w-2/5 overflow-hidden bg-surface-container shrink-0">
+              <img src="/paper-trading/vedant-kabra-founder.png" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" alt="Mr. Vedant Kabra" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#21005D]/90 via-[#21005D]/30 to-transparent"></div>
+              <div className="absolute bottom-5 left-5 right-5 text-white">
+                <span className="bg-white/20 backdrop-blur-md px-2.5 py-1 rounded text-[10px] uppercase font-bold tracking-wider mb-2.5 inline-block border border-white/20">Modern Era • 1999</span>
+                <h3 className="font-title-lg font-bold text-xl">Mr. Vedant Kabra</h3>
+                <p className="text-xs text-white/90 font-medium mt-1">Founder & Managing Director</p>
+              </div>
+            </div>
+            <div className="p-6 md:p-8 flex-1 flex flex-col justify-center">
+              <p className="text-on-surface-variant font-body-md text-sm leading-relaxed mb-8">
+                In 1999, he joined his father's business. Drawing from his long experiences and learning from the teachings of his grandfather Late Shri Govindlal ji Kabra and his father Shri Rajesh ji Kabra, he took the journey of the paper business further under his father's guidance, transforming the enterprise into a tech-enabled, multi-grade paper supplier.
+              </p>
+              
+              {/* Quote */}
+              <div className="p-5 bg-surface-container-low rounded-xl border border-outline-variant/60 relative mt-auto">
+                <span className="material-symbols-outlined text-secondary text-2xl absolute -top-3 -left-2 bg-white rounded-full border border-outline-variant/30 px-1 py-1 shadow-sm">
+                  format_quote
+                </span>
+                <p className="font-body-md italic text-xs text-primary font-medium leading-relaxed mt-1">
+                  "Our foundation was built on trust, client relationships, and punctuality over eighty years ago. Today, we carry that same sacred promise into every metric ton of kraft and duplex board we supply."
+                </p>
               </div>
             </div>
           </div>
         </div>
+
+        {/* Key Milestones Bar */}
+        <div className="mt-16 bg-white rounded-2xl border border-outline-variant p-8 shadow-sm flex flex-col md:flex-row justify-around items-center gap-8 md:gap-4 divide-y md:divide-y-0 md:divide-x divide-outline-variant">
+          <div className="text-center w-full px-4 pt-4 md:pt-0 first:pt-0">
+            <span className="block font-display-lg text-primary text-4xl mb-1">1940</span>
+            <span className="text-xs text-on-surface-variant uppercase font-bold tracking-wider">Founding Year</span>
+          </div>
+          <div className="text-center w-full px-4 pt-8 md:pt-0">
+            <span className="block font-display-lg text-secondary text-4xl mb-1">80+</span>
+            <span className="text-xs text-on-surface-variant uppercase font-bold tracking-wider">Years of Trust</span>
+          </div>
+          <div className="text-center w-full px-4 pt-8 md:pt-0">
+            <span className="block font-display-lg text-tertiary text-4xl mb-1">100%</span>
+            <span className="text-xs text-on-surface-variant uppercase font-bold tracking-wider">Circular Packaging</span>
+          </div>
+        </div>
+
       </div>
     </section>
   )

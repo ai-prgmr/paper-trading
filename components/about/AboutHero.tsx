@@ -17,7 +17,7 @@ export function AboutHero() {
           India's Trusted Name in Global Paper Solutions
         </h1>
         <p className="font-body-lg text-body-lg text-white/80 max-w-2xl mx-auto">
-          Bridging traditional industrial values with modern supply chain efficiency for over three decades.
+          Bridging traditional industrial values with modern supply chain efficiency for over eight decades.
         </p>
       </div>
       <div className="absolute bottom-0 left-0 w-full h-24 bg-gradient-to-t from-background to-transparent z-20"></div>

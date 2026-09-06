@@ -28,7 +28,7 @@ export function Navbar() {
       <nav className="flex justify-between items-center max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-full w-full">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
-          <Image alt="G L Paper Trading Company" src="/paper-trading/logo-5.png" width={150} height={150} />
+          <Image alt="G L Paper Trading Company" src="/paper-trading/logo-6.png" width={150} height={150} />
         </Link>
 
         {/* Desktop Nav Links */}

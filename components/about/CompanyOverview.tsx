@@ -19,7 +19,7 @@ export function CompanyOverview() {
         <div className="space-y-8">
           <div className="grid grid-cols-2 gap-8 py-4">
             <div className="border-t border-outline-variant pt-4">
-              <span className="block font-display-lg text-headline-lg text-primary">30+</span>
+              <span className="block font-display-lg text-headline-lg text-primary">80+</span>
               <span className="text-label-sm font-label-sm uppercase text-on-surface-variant">
                 Years Experience
               </span>
