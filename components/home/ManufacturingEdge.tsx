@@ -36,7 +36,7 @@ export function ManufacturingEdge() {
                 At GL Trading, progress is powered by responsibility—and guided by purpose. Founded in 2001, GL Trading has built a legacy rooted in sustainable sourcing, disciplined trading, and a commitment to creating value beyond transactions.
               </p>
               <p>
-                The company’s operations are anchored in a recycling-led sourcing ecosystem, where high-performance, wastepaper-based packaging boards and virgin-grade boards are procured from leading global and domestic manufacturers. This extensive network enables GL Paper Trading to serve both sustainable and premium packaging requirements with equal confidence and reliable supply.
+                The company’s operations are anchored in a recycling-led sourcing ecosystem, where high-performance, wastepaper-based packaging boards and virgin-grade boards are procured from leading global and domestic manufacturers. This extensive network enables GL Trading Company to serve both sustainable and premium packaging requirements with equal confidence and reliable supply.
               </p>
             </div>
           </div>
@@ -67,7 +67,7 @@ export function ManufacturingEdge() {
           <div className="relative w-full h-full rounded-2xl overflow-hidden border border-border shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <Image
               src="/paper-trading/manufacturing-edge.png"
-              alt="GL Paper Trading Advanced Manufacturing Mill Line"
+              alt="GL Trading Company Advanced Manufacturing Mill Line"
               fill
               className="object-cover"
               sizes="(max-w-lg) 100vw, 500px"

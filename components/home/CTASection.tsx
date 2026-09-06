@@ -7,7 +7,7 @@ export function CTASection() {
       <div className="max-w-container-max mx-auto text-center relative z-10">
         <h2 className="font-headline-lg text-headline-lg mb-6">Ready to scale your production?</h2>
         <p className="font-body-lg text-body-lg opacity-80 max-w-xl mx-auto mb-10">
-          Join hundreds of manufacturing enterprises that rely on G L Paper Trading for their primary and secondary packaging needs.
+          Join hundreds of manufacturing enterprises that rely on GL Trading Company for their primary and secondary packaging needs.
         </p>
         <div className="flex flex-wrap justify-center gap-6">
           <Link href="/contact">

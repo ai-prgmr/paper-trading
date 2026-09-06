@@ -37,7 +37,7 @@ export function ProductDescriptionCard({
   ]
 
   const whatsappMessage = encodeURIComponent(
-    `Hello G L Paper Trading, I am interested in getting a quote for: ${title} (${badgeText || specs.gsmRange}). Please provide pricing and availability details.`
+    `Hello GL Trading Company, I am interested in getting a quote for: ${title} (${badgeText || specs.gsmRange}). Please provide pricing and availability details.`
   )
   const whatsappUrl = `https://wa.me/919301532323?text=${whatsappMessage}`
 

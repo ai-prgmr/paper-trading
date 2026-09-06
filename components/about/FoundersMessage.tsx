@@ -22,12 +22,12 @@ export function FoundersMessage() {
 
         {/* Bento Grid Layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          
+
           {/* Card 1: Govindlal ji */}
           <div className="bg-white rounded-2xl border border-outline-variant shadow-sm overflow-hidden flex flex-col group hover:shadow-md transition-shadow duration-300">
             <div className="relative h-64 sm:h-72 overflow-hidden bg-surface-container">
-              <img src="/paper-trading/govindlal-kabra.png" className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700" alt="Late Shri Govindlal ji Kabra" />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/90 via-primary/30 to-transparent"></div>
+              <img src="/paper-trading/govindlal-kabra.png" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700" alt="Late Shri Govindlal ji Kabra" />
+              <div className="absolute inset-0 bg-linear-to-t from-primary/90 via-primary/30 to-transparent"></div>
               <div className="absolute bottom-5 left-5 right-5 text-white">
                 <span className="bg-white/20 backdrop-blur-md px-2.5 py-1 rounded text-[10px] uppercase font-bold tracking-wider mb-2.5 inline-block border border-white/20">The Genesis • 1940</span>
                 <h3 className="font-title-lg font-bold text-xl">Late Shri Govindlal ji Kabra</h3>
@@ -74,7 +74,7 @@ export function FoundersMessage() {
               <p className="text-on-surface-variant font-body-md text-sm leading-relaxed mb-8">
                 In 1999, he joined his father's business. Drawing from his long experiences and learning from the teachings of his grandfather Late Shri Govindlal ji Kabra and his father Shri Rajesh ji Kabra, he took the journey of the paper business further under his father's guidance, transforming the enterprise into a tech-enabled, multi-grade paper supplier.
               </p>
-              
+
               {/* Quote */}
               <div className="p-5 bg-surface-container-low rounded-xl border border-outline-variant/60 relative mt-auto">
                 <span className="material-symbols-outlined text-secondary text-2xl absolute -top-3 -left-2 bg-white rounded-full border border-outline-variant/30 px-1 py-1 shadow-sm">

@@ -12,7 +12,7 @@ export function CompanyOverview() {
             </h2>
           </div>
           <p className="text-on-surface-variant font-body-lg text-body-lg">
-            Founded on the principles of reliability and transparency, G L Paper Trading Trading Enterprise has grown from a local merchant to a premier national distributor. We specialize in sourcing and supplying high-quality industrial paper products that fuel the publishing, packaging, and logistics sectors across the Indian subcontinent and beyond.
+            Founded on the principles of reliability and transparency, GL Trading Company has grown from a local merchant to a premier national distributor. We specialize in sourcing and supplying high-quality industrial paper products that fuel the publishing, packaging, and logistics sectors across the Indian subcontinent and beyond.
           </p>
 
         </div>
