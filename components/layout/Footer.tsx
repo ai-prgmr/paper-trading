@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="bg-surface-dim w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant">
       <div className="md:col-span-1">
         <Link href="/" className="flex items-center gap-2">
-          <Image alt="G L Paper Trading Company" src="/paper-trading/logo-5.png" width={300} height={300} />
+          <Image alt="G L Trading Company" src="/paper-trading/logo-5.png" width={300} height={300} />
         </Link>
         <p className="text-on-surface-variant font-body-md mb-6 leading-relaxed">
           ISO 9001:2015 certified trading enterprise specializing in high-grade industrial paper and board.
@@ -93,16 +93,6 @@ export function Footer() {
         <span className="text-on-surface-variant text-sm">
           © 2024 G L Paper Trading Trading Enterprise. All rights reserved. ISO 9001:2015 Certified.
         </span>
-        <div className="flex gap-8">
-          <a
-            href="https://aiprgmr.in"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-on-surface-variant hover:text-primary transition-colors text-sm"
-          >
-            Designed and Developed by <span className="font-bold text-primary hover:underline">AI PRGMR</span>
-          </a>
-        </div>
       </div>
     </footer>
   )

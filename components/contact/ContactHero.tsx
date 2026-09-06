@@ -9,9 +9,9 @@ export function ContactHero() {
       />
       <div className="absolute inset-0 hero-gradient"></div>
       <div className="relative z-10 text-center px-4 max-w-container-max mx-auto text-white">
-        <h1 className="font-display-lg text-display-lg mb-4">Partner with G L Paper Trading</h1>
+        <h1 className="font-display-lg text-display-lg mb-4">Connect with G L Trading Company</h1>
         <p className="font-body-lg text-body-lg text-primary-fixed max-w-2xl mx-auto">
-          Connecting global manufacturers with local efficiency. Reach out today for wholesale industrial paper solutions and logistics support.
+          Connecting global manufacturers with local efficiency. Reach out today for wholesale paper solutions and logistics support.
         </p>
       </div>
     </section>

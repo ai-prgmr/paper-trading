@@ -12,7 +12,7 @@ export function ContactDetails() {
             <div>
               <h4 className="font-title-md text-title-md text-primary font-bold">Headquarters</h4>
               <p className="text-on-surface-variant font-body-md mt-1 text-sm">
-                4th Floor, Paper Tower, Commercial Zone 12, Mumbai, MH 400001, India
+                B-2 Raj Lakshmi Warehousing LaxmiBai Nagar Industrial Area, Kila Maidan, Indore - 452006, M.P.
               </p>
             </div>
           </div>
@@ -60,17 +60,17 @@ export function ContactDetails() {
       </div>
       {/* Map Placeholder */}
       <a
-        href="https://maps.google.com"
+        href="https://maps.app.goo.gl/CsYx8rBap5KR5VcD9"
         target="_blank"
         rel="noopener noreferrer"
         className="flex-grow min-h-[300px] border border-outline-variant rounded overflow-hidden relative group block"
       >
         <div
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
-          style={{
-            backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuChPBE3-6apKXZwppbXdSKG1HmfzKr0Yw_yUwE04JBe7xczigXsP57p4fQVJQNMiImGsSQ9R8q79NH5hzJmr3fJE0r5ZOk0Zq1wij7ENNS6d2KHavVlucFpg9qaec777-20uvHI_xgN1LJPTwPM4DU3tsxJ5KoPUuH35BCep--7f6wRjoO43JbpFwO_R_TDF0gqrYJmLeNb4fBwTRStfoD4OHTylOO0YPlmanhu-ISo9MtzI0GdVpBJ')`,
-          }}
-        />
+        >
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3775.742158619659!2d75.83132507541318!3d22.731543979378834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd926826ac47%3A0x189aece0f8a8c793!2sRajlaxmi%20Warehousing%20pvt%20ltd!5e1!3m2!1sen!2sin!4v1788688962988!5m2!1sen!2sin" width="600" height="450" loading="lazy" referrerPolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+
         <div className="absolute inset-0 bg-primary-container/10"></div>
         <div className="absolute bottom-4 left-4 bg-white px-4 py-2 rounded shadow-lg flex items-center gap-2">
           <span className="material-symbols-outlined text-primary" style={{ fontVariationSettings: "'FILL' 1" }}>
