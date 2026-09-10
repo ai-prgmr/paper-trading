@@ -1,14 +1,43 @@
+import type { Metadata } from "next"
 import { Navbar } from "@/components/layout/Navbar"
 import { ProductSidebar } from "@/components/products/ProductSidebar"
 import { ProductCategoryMobileNav } from "@/components/products/ProductCategoryMobileNav"
 import { DuplexBoardHero } from "@/components/products/DuplexBoardHero"
 import { DuplexVariantsList } from "@/components/products/DuplexVariantsList"
+import { ProductCTA } from "@/components/products/ProductCTA"
 import { DuplexTrustSection } from "@/components/products/DuplexTrustSection"
 import { Footer } from "@/components/layout/Footer"
+import { JsonLd } from "@/components/seo/JsonLd"
+
+export const metadata: Metadata = {
+  title: "Duplex Paper Board Solutions",
+  description: "High-quality Duplex Paper Board for packaging and printing applications, offered by GL Trading Company.",
+  alternates: {
+    canonical: "/duplex-paper-board",
+  },
+  openGraph: {
+    title: "Duplex Paper Board Solutions | GL Trading Company",
+    description: "High-quality Duplex Paper Board for packaging and printing applications, offered by GL Trading Company.",
+    url: "/duplex-paper-board",
+  }
+}
 
 export default function DuplexPaperBoardPage() {
   return (
     <div className="flex flex-col min-h-screen">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: "Duplex Paper Board",
+          description: "High-quality Duplex Paper Board for packaging and printing applications.",
+          url: "https://gltradingcompany.com/duplex-paper-board",
+          brand: {
+            "@type": "Brand",
+            name: "GL Trading Company"
+          }
+        }}
+      />
       <Navbar />
       <div className="flex max-w-container-max mx-auto w-full pt-20">
         <ProductSidebar />
@@ -16,6 +45,7 @@ export default function DuplexPaperBoardPage() {
           <ProductCategoryMobileNav />
           <DuplexBoardHero />
           <DuplexVariantsList />
+          <ProductCTA />
           <DuplexTrustSection />
         </main>
       </div>

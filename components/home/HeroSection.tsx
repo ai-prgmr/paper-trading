@@ -66,9 +66,15 @@ export function HeroSection() {
               <span className="font-label-sm text-label-sm uppercase tracking-widest bg-[#064E3B] text-white px-3 py-1 w-fit mb-6 rounded inline-block">
                 {slide.badge}
               </span>
-              <h1 className="font-display-lg text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight max-w-2xl drop-shadow-sm">
-                {slide.title}
-              </h1>
+              {index === 0 ? (
+                <h1 className="font-display-lg text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight max-w-2xl drop-shadow-sm">
+                  {slide.title}
+                </h1>
+              ) : (
+                <h2 className="font-display-lg text-4xl md:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight tracking-tight max-w-2xl drop-shadow-sm">
+                  {slide.title}
+                </h2>
+              )}
               <p className="font-body-lg text-base md:text-lg lg:text-xl max-w-2xl mb-10 opacity-90 leading-relaxed text-slate-100">
                 {slide.subtext}
               </p>

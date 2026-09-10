@@ -9,20 +9,40 @@ export function InquiryForm() {
     name: "",
     company: "",
     email: "",
+    phone: "",
     product: "Select a category",
     message: "",
   })
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setStatus("sending")
 
-    setTimeout(() => {
+    try {
+      const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL;
+      
+      if (scriptUrl) {
+        const formDataObj = new FormData();
+        Object.entries(formData).forEach(([key, value]) => {
+          formDataObj.append(key, value);
+        });
+        
+        await fetch(scriptUrl, {
+          method: "POST",
+          body: formDataObj,
+          mode: "no-cors",
+        });
+      } else {
+        // Fallback if URL isn't set
+        await new Promise(resolve => setTimeout(resolve, 1500));
+      }
+
       setStatus("sent")
       setFormData({
         name: "",
         company: "",
         email: "",
+        phone: "",
         product: "Select a category",
         message: "",
       })
@@ -30,7 +50,10 @@ export function InquiryForm() {
       setTimeout(() => {
         setStatus("idle")
       }, 3000)
-    }, 1500)
+    } catch (error) {
+      console.error("Form submission failed:", error);
+      setStatus("idle");
+    }
   }
 
   return (
@@ -76,6 +99,18 @@ export function InquiryForm() {
               placeholder="john@company.com"
             />
           </div>
+          <div className="flex flex-col gap-2">
+            <label className="font-label-sm text-label-sm uppercase text-outline">Phone Number (Optional)</label>
+            <input
+              type="tel"
+              value={formData.phone}
+              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+              className="bg-white border border-outline-variant px-4 py-3 focus:ring-1 focus:ring-primary-container focus:border-primary-container outline-none transition-all rounded font-body-md text-sm text-primary"
+              placeholder="+91 98765 43210"
+            />
+          </div>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           <div className="flex flex-col gap-2">
             <label className="font-label-sm text-label-sm uppercase text-outline">Product Interest</label>
             <select
