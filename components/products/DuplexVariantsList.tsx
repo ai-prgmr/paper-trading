@@ -35,10 +35,10 @@ export function DuplexVariantsList() {
     {
       title: "Uncoated Duplex Paper Board",
       description: "Optimized for cost-sensitive packaging where direct print contact isn't required. Provides excellent stiffness and folding resistance.",
-      gsm: "230 - 450 GSM",
-      gsmStartNumeric: 230,
+      gsm: "180 - 500 GSM",
+      gsmStartNumeric: 180,
       moq: "Minimum Order Quantity: 1200 Kg",
-      badgeText: "GSM: 230 - 450",
+      badgeText: "GSM: 180 - 500",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAWCYb3fy5pqHPq-sKsMkfYs6W9a-Ud-jJRwz0bdLmwIOmaFvqphY_hnGzJO33NaSl1ohBjXDQuGaxCtUuJLJuKYuzHtr6ToSAzn5OSXx8iYwoBZgoyiScdqp0ghrYhIPDdbyxj4Abry88cIsgSDGosr3COToPKs_nUZTHryXQ3pxE5nONuAL4pXF2-IzP0d-_kUlAhf3gNpeoZfavFRkzO9tb-K4SfCiQocdrZOmqtGsg81Bcr-J-f",
       usage: "Box Making",
       color: "Grey Back",
@@ -53,7 +53,7 @@ export function DuplexVariantsList() {
       moq: "Minimum Order Quantity: 1500 Kg",
       badgeText: "GSM: 180 - 400",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuBev8BHSWd9pze6QXhYgESqzDGYHpBsUwN_2fc6rXKk7YHi0kaAC-uDEFpACTi9FO1-VWO__YiBWURLeFpABRzG1hYrq7BTUSp7yDYpxTKB5GLOZTv3sINWHuy-E0Ud12n8aBxt-uUE4lZtriBTRpzfI8bLRMrIqsW3frGWPXnSbj-qiaOYk9152vCXeiNJUqVSSeGBOfnvx2-2fkFLrvCTVN9no1zpvvnkkXamt4Qn0yaHqbTwAUdF",
-      usage: "Printing",
+      usage: "High end multicolour mono cartons printing and packaging",
       color: "Grey Back",
       type: "Sheet/Roll",
       format: "Sheet/Roll"
@@ -74,12 +74,12 @@ export function DuplexVariantsList() {
     {
       title: "Duplex Board Paper Roll",
       description: "Continuous rolls for high-capacity rotary printing and automated packaging lines. Available in custom widths to minimize waste.",
-      gsm: "250 - 500 GSM",
-      gsmStartNumeric: 250,
+      gsm: "180 - 450 GSM",
+      gsmStartNumeric: 180,
       moq: "Min Load: 5000 Kg (One Truck)",
       badgeText: "Bulk Logistics",
       image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAfzpk0KqK2XjoDcLBSBg__wTiGvadu3_m6sOGiZpqsQK1lRdHEOArI83J5uOYLS3c-FsJbxjLLzSAyRVYkODq_smgd8vit6HDj_lRVQwwlFyZFRSEneKSkaz9pvWxbOF3jOI8OwS85q7Q7brME-ADTzQhZNONw8YG46HSzQzrkjDPWhWj4BGT1U_qtiK41WNoWiPyTx9fmwGqwFdt2d4TpPufvjLnFpjWb8pAecw74PGO1K8WapAQz",
-      usage: "Rotary Print",
+      usage: "Multicolour mono cartons",
       color: "Grey Back",
       type: "Roll Only",
       format: "Roll Only"
