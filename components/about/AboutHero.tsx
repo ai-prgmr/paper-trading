@@ -6,7 +6,7 @@ export function AboutHero() {
         <img
           className="w-full h-full object-cover"
           alt="Industrial paper manufacturing facility stacked with giant rolls"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ3zKau5anuPfn7pcCa_qqQameX-qn6oGG6wF3E5KfakEHwqum2TNA9YFpsXIRx_z36dRNbqfBPCp_eIjx9etsUVLFKs5xueaMZvl70OZp3a1ZIPEt3XhnpYQrtNTBMq1XwNasC6laK0xLGSV72FlrtbpXEU47cy41M4eZzmx2HXJAl_DzHUYQP38r-BDmrrqexCwL0U4C6al_pBs3P19IUYej6cAYnn6vaKHkMmn0VBBTNcuOMJKW"
+          src="/paper-trading/about-us-hero.png"
         />
       </div>
       <div className="relative z-20 text-center px-margin-mobile container mx-auto max-w-container-max text-white">

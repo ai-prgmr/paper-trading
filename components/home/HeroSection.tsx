@@ -53,7 +53,7 @@ export function HeroSection() {
       </div>
 
       {/* Dynamic Content Overlay on Top */}
-      <div className="relative z-20 h-full max-w-container-max mx-auto flex flex-col justify-center px-margin-mobile md:px-margin-desktop text-white">
+      <div className="relative z-20 h-full max-w-container-max mx-auto flex flex-col justify-center pt-24 md:pt-32 px-margin-mobile md:px-margin-desktop text-white">
         <div className="max-w-3xl">
           {slides.map((slide, index) => (
             <div

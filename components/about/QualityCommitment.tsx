@@ -6,7 +6,7 @@ export function QualityCommitment() {
           <img
             className="w-full h-[500px] object-cover rounded shadow-sm"
             alt="Quality testing laboratory environment measuring GSM and paper tensile strength"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDw4hsLxGTUVLsmL18970FjzDhW19CwTeoK-zY1NP1qygClsSJJSn3vvZNIWosx-8Job1PLePm9qi6j0mN78WWeYAw41E84mwZFomX66ufEVW_dwe8lnT24FMeDSrhzl6Qxjcyx-KgBDvkpw5E0SyVoiuEGX7mGqdEM47pmXo0DjXfyTv_CRqT0frRAQzCtXZ39QrVmnGk6V-djXhptElfUKyIBusf19zB-t1z7TKXcgkJM7QkxWbKu"
+            src="/paper-trading/bf-tester.png"
           />
         </div>
         <div className="w-full lg:w-1/2 space-y-8">
