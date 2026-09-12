@@ -19,14 +19,14 @@ export function InquiryForm() {
     setStatus("sending")
 
     try {
-      const scriptUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEETS_URL;
-      
+      const scriptUrl = "https://script.google.com/macros/s/AKfycbyzbePtBrILcwAu5AiQ2MoEHdGHriP99jFDo6CUCjgZFnfwhCZvmJi8F40jCUg2W2-3tA/exec";
+
       if (scriptUrl) {
         const formDataObj = new FormData();
         Object.entries(formData).forEach(([key, value]) => {
           formDataObj.append(key, value);
         });
-        
+
         await fetch(scriptUrl, {
           method: "POST",
           body: formDataObj,
@@ -140,13 +140,10 @@ export function InquiryForm() {
         <button
           type="submit"
           disabled={status !== "idle"}
-          className={`w-full md:w-auto text-white px-10 py-4 font-title-md text-title-md rounded transition-all flex items-center justify-center gap-2 cursor-pointer ${
-            status === "idle" ? "bg-brand-navy hover:bg-opacity-90" : ""
-          } ${
-            status === "sending" ? "bg-brand-navy bg-opacity-85" : ""
-          } ${
-            status === "sent" ? "bg-brand-forest" : ""
-          }`}
+          className={`w-full md:w-auto text-white px-10 py-4 font-title-md text-title-md rounded transition-all flex items-center justify-center gap-2 cursor-pointer ${status === "idle" ? "bg-brand-navy hover:bg-opacity-90" : ""
+            } ${status === "sending" ? "bg-brand-navy bg-opacity-85" : ""
+            } ${status === "sent" ? "bg-brand-forest" : ""
+            }`}
         >
           {status === "idle" && (
             <>
