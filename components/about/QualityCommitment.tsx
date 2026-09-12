@@ -4,9 +4,9 @@ export function QualityCommitment() {
       <div className="flex flex-col lg:flex-row gap-16 items-center">
         <div className="w-full lg:w-1/2">
           <img
-            className="w-full h-[500px] object-cover rounded shadow-sm"
+            className="w-full h-125 object-cover rounded shadow-sm"
             alt="Quality testing laboratory environment measuring GSM and paper tensile strength"
-            src="/paper-trading/bf-tester.png"
+            src="/bf-tester.png"
           />
         </div>
         <div className="w-full lg:w-1/2 space-y-8">

@@ -27,7 +27,7 @@ export function SustainabilityMetrics() {
       value: "500+",
       label: "Local Packaging Partners",
       icon: "handshake",
-      description: "Empowering Central India's industrial manufacturing ecosystem.",
+      description: "Empowering Central India's industrial packaging ecosystem.",
       color: "bg-secondary-container/30 text-on-secondary-container",
     },
   ]

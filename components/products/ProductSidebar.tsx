@@ -9,52 +9,33 @@ export function ProductSidebar() {
 
   const categories = [
     {
-      name: "Kraft Paper",
-      href: "/kraft-paper-solutions",
-      icon: "inventory_2",
-    },
-    {
       name: "Box Board (FBB / SBS)",
       href: "/box-board",
       icon: "layers",
+      disabled: false
     },
     {
       name: "Duplex Paper Board",
       href: "/duplex-paper-board",
       icon: "description",
+      disabled: false
     },
     {
-      name: "Writing & Printing",
-      href: "#",
-      icon: "description",
-      disabled: true,
-    },
-    {
-      name: "Tissue & Specialty",
-      href: "#",
-      icon: "opacity",
-      disabled: true,
-    },
-    {
-      name: "Newsprint",
-      href: "#",
-      icon: "newspaper",
-      disabled: true,
-    },
+      name: "Kraft Paper",
+      href: "/kraft-paper-solutions",
+      icon: "inventory_2",
+      disabled: false,
+    }
+
   ]
 
   return (
     <aside className="hidden lg:flex flex-col h-[calc(100vh-80px)] w-64 sticky top-20 border-r border-outline-variant bg-surface-container-low z-40">
-      <div className="p-6 border-b border-outline-variant">
-        <h3 className="font-label-sm text-label-sm uppercase tracking-wider text-primary">
-          Product Categories
-        </h3>
-        <p className="text-xs text-on-surface-variant mt-1">Industrial Grade Solutions</p>
-      </div>
-      <nav className="flex-1 overflow-y-auto">
+
+      <nav className="flex-1 overflow-y-auto py-12">
         {categories.map((cat) => {
           const active = pathname === cat.href
-          if (cat.disabled) {
+          if (cat?.disabled) {
             return (
               <span
                 key={cat.name}

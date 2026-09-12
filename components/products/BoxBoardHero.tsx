@@ -2,11 +2,6 @@ export function BoxBoardHero() {
   return (
     <section className="relative overflow-hidden mb-12 rounded-xl bg-primary-container p-8 md:p-12 text-white">
       <div className="relative z-10 max-w-3xl text-left">
-        <nav className="flex mb-4 text-sm text-on-primary-container font-medium uppercase tracking-widest">
-          <span>Products</span>
-          <span className="mx-2">/</span>
-          <span className="text-white">Box Board Solutions</span>
-        </nav>
         <h1 className="font-display-lg text-display-lg mb-6 leading-tight">Box Board (FBB & SBS)</h1>
         <p className="font-body-lg text-body-lg text-on-primary-container leading-relaxed">
           Premium virgin paperboards engineered for luxury packaging, pharmaceutical cartons, and high-fidelity graphics. Our Box Board range includes multi-ply Folding Box Board (FBB) and 100% virgin Solid Bleached Sulfate (SBS) boards delivering supreme rigidity, brightness, and flawless folding performance.

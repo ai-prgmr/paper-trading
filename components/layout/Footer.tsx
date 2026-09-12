@@ -5,15 +5,12 @@ export function Footer() {
     <footer className="bg-surface-dim w-full py-16 px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-4 gap-gutter border-t border-outline-variant">
       <div className="md:col-span-1">
         <Link href="/" className="flex items-center gap-2">
-          <Image alt="GL Trading Company" src="/paper-trading/logo-6.png" width={300} height={300} />
+          <Image alt="GL Trading Company" src="/logo-6.png" width={300} height={300} />
         </Link>
         <p className="text-on-surface-variant font-body-md mb-6">
           ISO 9001:2015 certified trading enterprise specializing in high-grade industrial paper and board.
         </p>
         <div className="flex gap-4">
-          <a href="#" className="text-on-surface-variant hover:text-tertiary-fixed transition-colors">
-            <span className="material-symbols-outlined">public</span>
-          </a>
           <a href="mailto:info@gltradingcompany.com" className="text-on-surface-variant hover:text-tertiary-fixed transition-colors" title="info@gltradingcompany.com">
             <span className="material-symbols-outlined">mail</span>
           </a>
@@ -38,11 +35,6 @@ export function Footer() {
           <li>
             <Link href="/duplex-paper-board" className="text-on-surface-variant hover:text-on-surface transition-colors">
               Duplex Paper Board
-            </Link>
-          </li>
-          <li>
-            <Link href="/kraft-paper-solutions" className="text-on-surface-variant hover:text-on-surface transition-colors">
-              Custom Solutions
             </Link>
           </li>
         </ul>
@@ -70,7 +62,7 @@ export function Footer() {
       <div>
         <h4 className="font-title-md text-title-md font-bold mb-6 text-on-surface">Contact card</h4>
         <div className="inline-block bg-white p-2 rounded-xl shadow-sm border border-outline-variant">
-          <Image src="/paper-trading/qr-code.png" alt="QR Code" width={300} height={300} className="rounded-lg" />
+          <Image src="/qr-code.png" alt="QR Code" width={300} height={300} className="rounded-lg" />
         </div>
       </div>
       <div className="md:col-span-4 pt-12 border-t border-outline-variant mt-12 flex flex-col md:flex-row justify-between items-center gap-6">

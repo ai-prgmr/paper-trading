@@ -10,12 +10,9 @@ export function DuplexBoardHero() {
         />
       </div>
       <div className="relative z-10 p-12 md:p-20 text-left">
-        <span className="inline-block px-4 py-1 mb-6 rounded-full bg-secondary text-on-primary font-label-sm text-label-sm uppercase tracking-widest">
-          Premium Category
-        </span>
         <h1 className="font-display-lg text-display-lg mb-6 max-w-2xl text-white">Duplex Paper Board</h1>
-        <p className="font-body-lg text-body-lg text-on-primary-container max-w-3xl leading-relaxed">
-          Our industrial-grade Duplex Boards are engineered for superior structural integrity and high-definition printability. Specifically designed for the global packaging industry, these boards provide the perfect balance between rigidity and cost-effectiveness for folding cartons and heavy-duty box manufacturing.
+        <p className="font-body-lg text-body-lg text-white max-w-3xl leading-relaxed">
+          Our industrial-grade Duplex Boards are engineered for superior structural integrity and high-definition printability. Specifically designed for the global packaging industry, these boards provide the perfect balance between rigidity and cost-effectiveness for folding cartons and heavy-duty box packaging.
         </p>
       </div>
     </section>

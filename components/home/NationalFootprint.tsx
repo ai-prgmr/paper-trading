@@ -7,10 +7,10 @@ export function NationalFootprint() {
             Our Presence
           </span>
           <h2 className="font-display-lg text-display-lg text-primary mb-8 leading-tight">
-            Serving the Heart of India's Manufacturing
+            Serving the Heart of India's Packaging Industry
           </h2>
           <p className="font-body-lg text-body-lg text-on-surface-variant mb-12">
-            With over eight decades of business legacy, GL Trading Company has established a robust distribution network spanning across 18+ states. We bridge the gap between large-scale mills and local packaging manufacturers.
+            With over eight decades of business legacy, GL Trading Company has established a robust distribution network spanning across 18+ states. We bridge the gap between large-scale mills and local packaging businesses.
           </p>
           <div className="space-y-8">
             <div className="flex gap-6 items-start">

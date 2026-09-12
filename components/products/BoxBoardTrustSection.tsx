@@ -5,7 +5,7 @@ export function BoxBoardTrustSection() {
         <span className="material-symbols-outlined text-4xl text-secondary mb-4">sanitizer</span>
         <h4 className="font-title-md text-title-md text-primary mb-2 font-bold">Food-Grade & Pure</h4>
         <p className="text-on-surface-variant font-body-md text-sm">
-          Certified virgin wood fibers manufactured under stringent hygienic standards for direct food, pharma, and cosmetic packaging.
+          Certified virgin wood fibers sourced under stringent hygienic standards for direct food, pharma, and cosmetic packaging.
         </p>
       </div>
       <div className="flex flex-col items-center">

@@ -34,7 +34,7 @@ export function KraftSustainabilityCommitment() {
             </div>
             <h3 className="font-title-md text-title-md text-primary mb-4 font-bold">Eco-Conscious Process</h3>
             <p className="font-body-md text-on-surface-variant text-sm leading-relaxed">
-              Our manufacturing facilities employ advanced water recycling systems and energy-efficient machinery to minimize our environmental footprint.
+              Our partner mills employ advanced water recycling systems and energy-efficient machinery to minimize our environmental footprint.
             </p>
           </div>
         </div>

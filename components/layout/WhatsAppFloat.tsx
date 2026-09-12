@@ -11,7 +11,7 @@ export function WhatsAppFloat() {
     >
       <span className="material-symbols-outlined text-3xl">chat</span>
       {/* Tooltip */}
-      <span className="absolute right-full mr-4 bg-white text-surface-dim px-3 py-1.5 rounded text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
+      <span className="absolute right-full mr-4 bg-[#25D366] text-surface-dim px-3 py-1.5 rounded text-sm font-medium opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap shadow-md pointer-events-none">
         Chat with Sales
       </span>
     </Link>

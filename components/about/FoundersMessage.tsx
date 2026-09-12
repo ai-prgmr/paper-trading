@@ -27,7 +27,7 @@ export function FoundersMessage() {
           <div className="flex flex-col md:flex-row gap-8 lg:gap-16 items-center group">
             <div className="w-full md:w-5/12 lg:w-1/3 relative shrink-0">
               <div className="relative rounded-2xl overflow-hidden bg-surface-container/50 border border-outline-variant/50 shadow-lg group-hover:shadow-xl transition-shadow duration-500">
-                 <img src="/paper-trading/GL-Kabra-standing.png" className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" alt="Late Shri Govindlal ji Kabra" />
+                 <img src="/GL-Kabra-standing.png" className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" alt="Late Shri Govindlal ji Kabra" />
               </div>
               <div className="absolute -z-10 -inset-4 bg-primary/5 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
@@ -50,7 +50,7 @@ export function FoundersMessage() {
           <div className="flex flex-col md:flex-row-reverse gap-8 lg:gap-16 items-center group">
             <div className="w-full md:w-5/12 lg:w-1/3 relative shrink-0">
               <div className="relative rounded-2xl overflow-hidden bg-surface-container/50 border border-outline-variant/50 shadow-lg group-hover:shadow-xl transition-shadow duration-500">
-                 <img src="/paper-trading/rajesh-kabra-standing.png" className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" alt="Mr. Rajesh Kabra" />
+                 <img src="/rajesh-kabra-standing.png" className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" alt="Mr. Rajesh Kabra" />
               </div>
               <div className="absolute -z-10 -inset-4 bg-secondary/5 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>
@@ -73,7 +73,7 @@ export function FoundersMessage() {
           <div className="flex flex-col md:flex-row gap-8 lg:gap-16 items-center group">
             <div className="w-full md:w-5/12 lg:w-1/3 relative shrink-0">
               <div className="relative rounded-2xl overflow-hidden bg-surface-container/50 border border-outline-variant/50 shadow-lg group-hover:shadow-xl transition-shadow duration-500">
-                 <img src="/paper-trading/vedant-kabra-standing.png" className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" alt="Mr. Vedant Kabra" />
+                 <img src="/vedant-kabra-standing.png" className="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-700" alt="Mr. Vedant Kabra" />
               </div>
               <div className="absolute -z-10 -inset-4 bg-[#21005D]/5 rounded-[2rem] blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             </div>

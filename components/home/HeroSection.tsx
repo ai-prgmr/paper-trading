@@ -8,15 +8,15 @@ export function HeroSection() {
 
   const slides = [
     {
-      image: "/paper-trading/hero-3.png",
+      image: "/hero-3.png",
       title: "Central India's Premier Partner for Sustainable Paper & Packaging",
-      subtext: "We bridge the gap between global eco-friendly paper mills and local manufacturing. Get reliable access to FSC-certified, plastic-substitute paper boards with agile, zero-downtime logistics.",
+      subtext: "We bridge the gap between global eco-friendly paper mills and local businesses. Get reliable access to FSC-certified, plastic-substitute paper boards with agile, zero-downtime logistics.",
       badge: "ISO 9001:2015 Certified Enterprise"
     },
     {
-      image: "/paper-trading/hero-4.png",
+      image: "/hero-4.png",
       title: "Sustainable Today. Responsible Tomorrow.",
-      subtext: "Connecting local manufacturing with international green standards. We supply 100% recyclable kraft paper and duplex boards for circular-economy packaging solutions.",
+      subtext: "Connecting local businesses with international green standards. We supply 100% recyclable kraft paper and duplex boards for circular-economy packaging solutions.",
       badge: "FSC & PEFC Sourced Inventory"
     },
   ]

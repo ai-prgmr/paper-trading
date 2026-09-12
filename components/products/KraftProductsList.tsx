@@ -103,6 +103,20 @@ export function KraftProductsList() {
       ecoText: "100% Recyclable",
       gradeCategory: "board",
       formatCategory: "both"
+    },
+    {
+      id: "one-side-printed-kraft-liner-board",
+      title: "One Side Printed Kraft Liner Board",
+      subtitle: "Premium kraft linerboard with one side printed, ideal for premium corrugated packaging, providing high RCT and Strength allowing GSM savings to end users.",
+      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuCsXQzgvEuCb29Pb12rgsx05rg2_P98NwXmIQtSIaPC4GC4W4P3WMO53METDi06-bfYaVlAz_1R7mZJSzBoean8TbhPulZDxle6pTpV3VN1I09k15gkL3pB1UhplvQ6LruU68kwMmqLE9BUDajVsjzBvpbS4rG4prVDQHbFZwzrxp9vUl7E7FlOFOTojEeRkBOfcRjhJ-fRA4qFkx_xvqRiFFCTAklKQ6vXeV0zV_TtVTYKklaa7Ku2",
+      color: "One Side Printed Kraft",
+      usage: "Corrugation and printed packaging",
+      gsm: "130 - 400 GSM",
+      gsmStartNumeric: 130,
+      shape: "Roll & Sheet Available",
+      ecoText: "100% Recyclable",
+      gradeCategory: "board",
+      formatCategory: "both"
     }
   ]
 

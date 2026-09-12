@@ -10,7 +10,7 @@ export function ProductCategories() {
         </h2>
         <div className="w-20 h-1 bg-on-secondary-container"></div>
         <p className="mt-6 font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
-          Discover our high-performance paper products, manufactured with precision for packaging and industrial applications.
+          Discover our high-performance paper products, sourced with precision for packaging and industrial applications.
         </p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-12 gap-gutter">

@@ -5,8 +5,8 @@ export function AboutHero() {
         <div className="absolute inset-0 bg-primary-container/60 z-10"></div>
         <img
           className="w-full h-full object-cover"
-          alt="Industrial paper manufacturing facility stacked with giant rolls"
-          src="/paper-trading/about-us-hero.png"
+          alt="Industrial paper warehouse facility stacked with giant rolls"
+          src="/about-us-hero.png"
         />
       </div>
       <div className="relative z-20 text-center px-margin-mobile container mx-auto max-w-container-max text-white">

@@ -6,7 +6,7 @@ export function AggregatorAdvantage() {
       num: "01",
       title: "Sourcing from Top-Tier Green Mills",
       description:
-        "We source high-volume, FSC and PEFC-certified sustainable paper directly from leading global and domestic manufacturers.",
+        "We source high-volume, FSC and PEFC-certified sustainable paper directly from leading global and domestic mills.",
       icon: "forest",
     },
     {
@@ -20,7 +20,7 @@ export function AggregatorAdvantage() {
       num: "03",
       title: "Agile 48-Hour Local Delivery",
       description:
-        "Enjoy rapid, zero-downtime shipping through our carbon-optimized logistics network directly to your manufacturing floor.",
+        "Enjoy rapid, zero-downtime shipping through our carbon-optimized logistics network directly to your warehouse or floor.",
       icon: "local_shipping",
     },
   ]
