@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import { Outfit, Inter } from "next/font/google"
+import Script from "next/script"
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
@@ -43,6 +44,19 @@ export default function RootLayout({
           rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=block"
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-BZZQ6F82DE"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-BZZQ6F82DE');
+          `}
+        </Script>
       </head>
       <body>
         <JsonLd
