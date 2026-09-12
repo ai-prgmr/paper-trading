@@ -19,7 +19,7 @@ export function InquiryForm() {
     setStatus("sending")
 
     try {
-      const scriptUrl = "https://script.google.com/macros/s/AKfycbyzbePtBrILcwAu5AiQ2MoEHdGHriP99jFDo6CUCjgZFnfwhCZvmJi8F40jCUg2W2-3tA/exec";
+      const scriptUrl = "https://script.google.com/macros/s/AKfycbwJH84HxuTzowFEaA_asDFcv1CcF1bmW2XKKngy7tnlSmapHnKxP2u-i_W-z8nKkh61/exec";
 
       if (scriptUrl) {
         const formDataObj = new FormData();
