@@ -25,6 +25,12 @@ export function ProductSidebar() {
       href: "/kraft-paper-solutions",
       icon: "inventory_2",
       disabled: false,
+    },
+    {
+      name: "Copier Paper",
+      href: "/copier",
+      icon: "print",
+      disabled: false,
     }
 
   ]

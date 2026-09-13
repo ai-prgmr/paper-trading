@@ -1,18 +1,31 @@
+import Link from "next/link"
+
 export function ContactHero() {
   return (
-    <section className="relative h-[450px] flex items-center justify-center overflow-hidden">
+    <section className="relative w-full min-h-[450px] md:min-h-[500px] flex items-center overflow-hidden">
+      {/* Responsive Background Image */}
       <div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 w-full h-full bg-cover bg-center"
         style={{
-          backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuD3wD5ehfESaaiU5PxVFDHLIrJO9cCsF6BrQiB7D3Om1gEzKyBoXfg3HWRXymc8KS29Zko2OSozt8hUhzHofxmkhuJ56Gx_F6oFhaAWrlxDo8giIS4yCLHjRfoVIghJvSIHh0CrWyLHi9lD1qCv3dfvbNqq2dbqBI-RIrLaR6uNy-w9G6lY8v75z4xRcrTlfxXzjmFt5USZSvQoWI-30sDtN-9l1U8pYi9uSKDJbGbMGBrwt9fyoI0U')`,
+          backgroundImage: `url('/contact-hero-bg.jpg')`,
         }}
       />
-      <div className="absolute inset-0 hero-gradient"></div>
-      <div className="relative z-10 text-center px-4 max-w-container-max mx-auto text-white">
-        <h1 className="font-display-lg text-display-lg mb-4">Connect with GL Trading Company</h1>
-        <p className="font-body-lg text-body-lg text-primary-fixed max-w-2xl mx-auto">
-          Connecting global mills with local efficiency. Reach out today for wholesale paper solutions and logistics support.
-        </p>
+
+      {/* Light gradient overlay to ensure text readability on the left */}
+      <div className="absolute inset-0 bg-linear-to-r from-white/90 via-white/50 to-transparent"></div>
+
+      <div className="relative z-10 w-full max-w-container-max mx-auto px-4 sm:px-8 pt-24 pb-12">
+        <div className="max-w-xl text-left">
+          <h1 className="font-display-lg text-5xl md:text-6xl font-bold text-[#1e293b] mb-2 tracking-tight drop-shadow-sm">
+            Contact Us
+          </h1>
+
+          <div className="w-16 h-1 bg-[#eab308] mb-6 rounded-full"></div>
+
+          <p className="font-body-lg text-sm md:text-base font-semibold tracking-widest text-[#475569] uppercase mb-12 drop-shadow-sm leading-relaxed">
+            Let's build a stronger, <br className="hidden sm:block" /> cleaner tomorrow together
+          </p>
+        </div>
       </div>
     </section>
   )

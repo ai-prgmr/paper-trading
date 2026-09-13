@@ -1,4 +1,5 @@
 import Link from "next/link"
+import { JsonLd } from "@/components/seo/JsonLd"
 
 export interface ProductSpec {
   material: string
@@ -43,6 +44,24 @@ export function ProductDescriptionCard({
 
   return (
     <article className="bg-surface industrial-border rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-sm hover:shadow-md transition-shadow text-left min-w-0">
+      <JsonLd
+        data={{
+          "@context": "https://schema.org",
+          "@type": "Product",
+          name: title,
+          description: description,
+          image: image,
+          brand: {
+            "@type": "Brand",
+            name: "GL Trading Company"
+          },
+          additionalProperty: [
+            { "@type": "PropertyValue", name: "Material", value: specs.material },
+            { "@type": "PropertyValue", name: "GSM Range", value: specs.gsmRange },
+            { "@type": "PropertyValue", name: "Eco Friendly", value: specs.eco }
+          ]
+        }}
+      />
       {/* Left side: Image */}
       <div className="lg:w-1/3 relative h-64 lg:h-auto border-b lg:border-b-0 lg:border-r border-outline-variant shrink-0">
         <img className="w-full h-full object-cover" alt={title} src={image} />
@@ -73,44 +92,18 @@ export function ProductDescriptionCard({
           {/* Description text */}
           <p className="text-on-surface-variant mb-6 font-body-md text-sm leading-relaxed">{description}</p>
 
-          {/* Mobile specs: 2-column key-value grid (hidden on md+) */}
-          <div className="grid grid-cols-2 gap-y-4 gap-x-6 md:hidden mb-8">
+          {/* Responsive Specs Grid */}
+          <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 mb-8">
             {specItems.map((item) => (
-              <div key={item.label} className="flex flex-col border-b border-outline-variant/30 pb-2">
+              <div key={item.label} className="flex flex-col p-3 rounded-md bg-surface-container-low border border-outline-variant/50">
                 <span className="text-[10px] text-outline font-label-sm uppercase tracking-wider mb-1">
                   {item.label}
                 </span>
-                <span className="font-medium text-sm text-primary font-body-md truncate">
+                <span className="font-medium text-sm text-on-surface font-body-md break-words">
                   {item.value}
                 </span>
               </div>
             ))}
-          </div>
-
-          {/* Desktop specs: Table (hidden on mobile) */}
-          <div className="hidden md:block overflow-x-auto mb-8 w-full max-w-full">
-            <table className="w-full text-left font-body-md border-collapse text-sm">
-              <thead>
-                <tr className="bg-surface-container text-on-surface font-label-sm text-label-sm border-b border-outline">
-                  <th className="px-4 py-2 border-r border-outline-variant uppercase">Material</th>
-                  <th className="px-4 py-2 border-r border-outline-variant uppercase">Color</th>
-                  <th className="px-4 py-2 border-r border-outline-variant uppercase">Usage</th>
-                  <th className="px-4 py-2 border-r border-outline-variant uppercase">GSM Range</th>
-                  <th className="px-4 py-2 border-r border-outline-variant uppercase">Shape</th>
-                  <th className="px-4 py-2 uppercase">Eco</th>
-                </tr>
-              </thead>
-              <tbody className="text-on-surface-variant">
-                <tr className="border-b border-outline-variant">
-                  <td className="px-4 py-3 border-r border-outline-variant">{specs.material}</td>
-                  <td className="px-4 py-3 border-r border-outline-variant">{specs.color}</td>
-                  <td className="px-4 py-3 border-r border-outline-variant">{specs.usage}</td>
-                  <td className="px-4 py-3 border-r border-outline-variant">{specs.gsmRange}</td>
-                  <td className="px-4 py-3 border-r border-outline-variant">{specs.shape}</td>
-                  <td className="px-4 py-3 text-on-tertiary-container font-bold">{specs.eco}</td>
-                </tr>
-              </tbody>
-            </table>
           </div>
         </div>
 

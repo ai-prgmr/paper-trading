@@ -23,6 +23,11 @@ export function ProductCategoryMobileNav() {
       href: "/duplex-paper-board",
       icon: "description",
     },
+    {
+      name: "Copier Paper",
+      href: "/copier",
+      icon: "print",
+    },
   ]
 
   return (
@@ -33,7 +38,7 @@ export function ProductCategoryMobileNav() {
           <Link
             key={cat.name}
             href={cat.href}
-            className={cn("w-full", idx === 2 ? "col-span-2" : "")}
+            className="w-full"
           >
             <button
               className={cn(

@@ -5,7 +5,7 @@ export function KraftHero() {
         <div
           className="w-full h-full bg-cover bg-center brightness-50"
           style={{
-            backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuDjNJ4l412keC7oYwBCbh21LeVsn5DlQKscehVuUYQvRTSdciCDBjWvdRqqVu2ED_cGVvcV-3Nut9jtJoKjPbXxSefAX_0OIS8q2rGMo6eIJN8wp-nTk0h-jIJijzyTn9qjq4O4_8biHS18VL3l_KqkLcNVtxligOTwXLhd749qDXZvoZ-bGVyKY3FDDMC0lALJDH7CCM7sq9uTyfkgrHOXw7cZgtwfs-w0S5Wah_mFZjrQErIEcdkG')`,
+            backgroundImage: `url('kraft-paper.jpg')`,
           }}
         />
       </div>

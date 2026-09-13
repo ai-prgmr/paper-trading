@@ -20,7 +20,7 @@ export function ProductCategories() {
           <div
             className="absolute inset-0 w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
             style={{
-              backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuBwZSA02nG5EZd7ONi0PQGL8dSRJzUyFP8KrYoGkOEU598JJrE9tCKOAY6gwcnabxBJDnjtWt1_IFxEBTl6zT_gk4JicjuyHGALhUCkfj-_YD3NXfjv5P982T0zb7t6MOQpVV0UmltG0xrPqgesRM_BiWZwhG5PBIf68SLAnmO5XvggB_NR9cPlQSopk-asXFbfCzhIE1km3jfNNQc0CotiwvAwL-qnkokiZalOMqj46pt8rHiTe4sO')`,
+              backgroundImage: `url('/SBS.webp')`,
             }}
           />
           <div className="absolute bottom-0 left-0 p-10 z-20 text-white">
@@ -52,7 +52,7 @@ export function ProductCategories() {
           <div
             className="absolute inset-0 w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
             style={{
-              backgroundImage: `url('https://lh3.googleusercontent.com/aida-public/AB6AXuDMbT4UMbf5OBg-_1hJvcbJaNmGpDR1SEvykhTeH6u7BK79sWLivSTg1vEPcGZN8sJp6wHMPDxJFXR9JXVctFKEU7M8_THSxz5_mMeLTLeOSJV4veFW6Qy73vp8sVGw9aer2eUWZ1E2E4v569nJN8QFFK3-f5TVAQf3KrU1jrMzL5s_P8L3VVZoopkzFrWMRJsBk7R_8uzh5hQw1Y1YCwdIWQrmNGFLhV9jWmqQBNdrNPMaQ9ZeGVvI')`,
+              backgroundImage: `url('/kraft-paper.jpg')`,
             }}
           />
           <div className="absolute bottom-0 left-0 p-8 z-20 text-white">
@@ -69,28 +69,63 @@ export function ProductCategories() {
           </div>
         </div>
 
-        {/* Small Product Cards */}
-        <div className="md:col-span-6 lg:col-span-4 group relative overflow-hidden rounded bg-surface-container-low h-[300px] bento-card border border-outline-variant">
-          <div className="p-8 h-full flex flex-col justify-between paper-texture">
+        {/* Duplex Paper Board */}
+        <div className="md:col-span-6 lg:col-span-4 group relative overflow-hidden rounded bg-surface-container-low h-[300px] bento-card border border-outline-variant text-white">
+          <div className="absolute inset-0 bg-linear-to-t from-[#064E3B]/90 via-[#064E3B]/60 to-transparent z-10"></div>
+          <div
+            className="absolute inset-0 w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
+            style={{
+              backgroundImage: `url('/duplex-board.jpg')`,
+            }}
+          />
+          <div className="p-8 h-full flex flex-col justify-between relative z-20">
             <div>
-              <span className="material-symbols-outlined text-on-secondary-container mb-4 text-3xl">
+              <span className="material-symbols-outlined text-white mb-4 text-3xl">
                 description
               </span>
               <h3 className="font-title-md text-title-md font-bold mb-2">Duplex Paper Board</h3>
-              <p className="text-sm text-on-surface-variant font-body-md">
+              <p className="text-sm opacity-90 font-body-md">
                 Sturdy recycled grey back boards for reliable everyday packaging solutions.
               </p>
             </div>
             <div className="flex items-center justify-between mt-auto">
-              <span className="text-xs font-bold text-on-secondary-fixed-variant">180 - 400 GSM</span>
-              <Link href="/duplex-paper-board" className="material-symbols-outlined bg-white rounded-full p-2 text-primary shadow-sm hover:scale-115 transition-transform">
-                add
+              <span className="text-xs font-bold bg-white/20 px-2 py-1 rounded backdrop-blur-sm">180 - 400 GSM</span>
+              <Link href="/duplex-paper-board" className="material-symbols-outlined bg-white rounded-full p-2 text-[#064E3B] shadow-sm hover:scale-115 transition-transform">
+                arrow_forward
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="md:col-span-6 lg:col-span-8 group relative overflow-hidden rounded bg-primary-container h-[300px] bento-card border border-outline">
+        {/* Copier Paper */}
+        <div className="md:col-span-6 lg:col-span-4 group relative overflow-hidden rounded bg-surface-container-low h-[300px] bento-card border border-outline-variant text-white">
+          <div className="absolute inset-0 bg-linear-to-t from-[#064E3B]/90 via-[#064E3B]/60 to-transparent z-10"></div>
+          <div
+            className="absolute inset-0 w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-700"
+            style={{
+              backgroundImage: `url('/copier-paper.jpg')`,
+            }}
+          />
+          <div className="p-8 h-full flex flex-col justify-between relative z-20">
+            <div>
+              <span className="material-symbols-outlined text-white mb-4 text-3xl">
+                print
+              </span>
+              <h3 className="font-title-md text-title-md font-bold mb-2">Copier Paper</h3>
+              <p className="text-sm opacity-90 font-body-md">
+                High-performance A3 and A4 copier paper for seamless printing.
+              </p>
+            </div>
+            <div className="flex items-center justify-between mt-auto">
+              <span className="text-xs font-bold bg-white/20 px-2 py-1 rounded backdrop-blur-sm">70 - 100 GSM</span>
+              <Link href="/copier" className="material-symbols-outlined bg-white rounded-full p-2 text-[#064E3B] shadow-sm hover:scale-115 transition-transform">
+                arrow_forward
+              </Link>
+            </div>
+          </div>
+        </div>
+
+        <div className="md:col-span-12 lg:col-span-4 group relative overflow-hidden rounded bg-primary-container h-[300px] bento-card border border-outline">
           <div className="p-8 h-full flex items-center justify-between">
             <div className="text-white max-w-md">
               <h3 className="font-headline-lg text-headline-lg mb-4">Custom Bulk Orders</h3>
@@ -102,8 +137,8 @@ export function ProductCategories() {
                 <span className="material-symbols-outlined">launch</span>
               </Link>
             </div>
-            <div className="hidden lg:block opacity-20 transform -rotate-12 translate-x-10">
-              <span className="material-symbols-outlined text-[160px]">inventory_2</span>
+            <div className="hidden lg:block opacity-20 transform -rotate-12 translate-x-4">
+              <span className="material-symbols-outlined text-[120px]">inventory_2</span>
             </div>
           </div>
         </div>

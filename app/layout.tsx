@@ -1,13 +1,14 @@
 import type { Metadata } from "next"
-import { Outfit, Inter } from "next/font/google"
 import Script from "next/script"
 import { WhatsAppFloat } from "@/components/layout/WhatsAppFloat"
 import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import { JsonLd } from "@/components/seo/JsonLd"
+import { Navbar } from "@/components/layout/Navbar"
+import { Footer } from "@/components/layout/Footer"
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://gltradingcompany.com'),
+  metadataBase: 'https://gltradingcompany.com',
   title: {
     default: "GL Trading Company | Paper & Board Trading",
     template: "%s | GL Trading Company"
@@ -58,7 +59,7 @@ export default function RootLayout({
           `}
         </Script>
       </head>
-      <body>
+      <body className="flex flex-col min-h-screen">
         <JsonLd
           data={{
             "@context": "https://schema.org",
@@ -72,7 +73,11 @@ export default function RootLayout({
             }
           }}
         />
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </ThemeProvider>
         <WhatsAppFloat />
       </body>
     </html>
