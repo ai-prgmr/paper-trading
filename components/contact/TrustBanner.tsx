@@ -14,7 +14,7 @@ export function TrustBanner() {
         <div className="flex items-center gap-4">
           <span className="material-symbols-outlined text-[48px] text-white">public</span>
           <div>
-            <p className="font-title-md text-title-md text-white font-bold">Exporting to 24+ Countries</p>
+            <p className="font-title-md text-title-md text-white font-bold">Exporting to 20+ Countries</p>
             <p className="text-on-primary-container text-sm font-body-md">
               Dedicated international logistics desk
             </p>

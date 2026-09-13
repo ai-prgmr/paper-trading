@@ -86,7 +86,7 @@ export function FoundersMessage() {
               <p className="text-secondary font-medium text-lg md:text-xl mb-6">Founder & Managing Director</p>
               <div className="text-on-surface-variant md:text-lg leading-relaxed space-y-4 mb-8">
                 <p>
-                  In 1999, he joined his father's business. Drawing from his long experiences and learning from the teachings of his grandfather Late Shri Govindlal ji Kabra and his father Shri Rajesh ji Kabra, he took the journey of the paper business further under his father's guidance, transforming the enterprise into a tech-enabled, multi-grade paper supplier.
+                  In 1999, he joined his father's business. Drawing from his long experiences and learning from the teachings of his grandfather Late Shri Govindlal ji Kabra and his father Shri Rajesh ji Kabra, he took the journey of the paper business further under his father's guidance. In 2016, he officially established GL Trading Company as a separate entity, transforming the enterprise into a tech-enabled, multi-grade paper supplier.
                 </p>
               </div>
               
