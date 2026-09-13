@@ -3,8 +3,8 @@ import type { MetadataRoute } from 'next';
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://gltradingcompany.com';
-  
+  const baseUrl = 'https://gltradingcompany.com';
+
   const routes = [
     '',
     '/about',
@@ -13,6 +13,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/coated-duplex-board',
     '/duplex-paper-board',
     '/kraft-paper-solutions',
+    '/copier'
   ];
 
   return routes.map((route) => ({

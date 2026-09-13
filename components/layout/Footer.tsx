@@ -37,6 +37,11 @@ export function Footer() {
               Duplex Paper Board
             </Link>
           </li>
+          <li>
+            <Link href="/copier" className="text-on-surface-variant hover:text-on-surface transition-colors">
+              Copier Paper
+            </Link>
+          </li>
         </ul>
       </div>
       <div>
