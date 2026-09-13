@@ -55,6 +55,11 @@ export function ProductDescriptionCard({
             "@type": "Brand",
             name: "GL Trading Company"
           },
+          offers: {
+            "@type": "Offer",
+            availability: "https://schema.org/InStock",
+            url: "https://gltradingcompany.com/contact"
+          },
           additionalProperty: [
             { "@type": "PropertyValue", name: "Material", value: specs.material },
             { "@type": "PropertyValue", name: "GSM Range", value: specs.gsmRange },

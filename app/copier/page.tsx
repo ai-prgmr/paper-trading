@@ -32,6 +32,11 @@ export default function CopierPage() {
           brand: {
             "@type": "Brand",
             name: "GL Trading Company"
+          },
+          offers: {
+            "@type": "Offer",
+            availability: "https://schema.org/InStock",
+            url: "https://gltradingcompany.com/contact"
           }
         }}
       />
