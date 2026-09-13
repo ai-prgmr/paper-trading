@@ -66,10 +66,13 @@ export default function RootLayout({
             "@type": "Organization",
             name: "GL Trading Company",
             url: "https://gltradingcompany.com",
+            logo: "https://gltradingcompany.com/logo-6.png",
             description: "GL Trading Company is a premier supplier of high-quality paper and board products, specializing in Duplex Board, Folding Box Board (FBB), and Kraft Paper solutions.",
             contactPoint: {
               "@type": "ContactPoint",
-              contactType: "customer service",
+              telephone: "+91-93015-32323",
+              contactType: "sales",
+              email: "info@gltradingcompany.com"
             }
           }}
         />

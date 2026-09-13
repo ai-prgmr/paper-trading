@@ -28,7 +28,28 @@ export default function AboutPage() {
           "@type": "AboutPage",
           name: "About GL Trading Company",
           description: "Learn about GL Trading Company, our founders, and our commitment to quality.",
-          url: "https://gltradingcompany.com/about"
+          url: "https://gltradingcompany.com/about",
+          mainEntity: {
+            "@type": "Organization",
+            name: "GL Trading Company",
+            url: "https://gltradingcompany.com",
+            logo: "https://gltradingcompany.com/logo-6.png",
+            foundingDate: "2016",
+            founders: [
+              {
+                "@type": "Person",
+                name: "Late Shri Govindlal ji Kabra"
+              },
+              {
+                "@type": "Person",
+                name: "Rajesh Kabra"
+              },
+              {
+                "@type": "Person",
+                name: "Vedant Kabra"
+              }
+            ]
+          }
         }}
       />
       <main className="flex-1 pt-20">

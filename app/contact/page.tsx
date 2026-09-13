@@ -27,7 +27,29 @@ export default function ContactPage() {
           "@type": "ContactPage",
           name: "Contact GL Trading Company",
           description: "Get in touch with GL Trading Company for inquiries regarding our paper and board products. Contact us today at  +91 93015 32323 or info@gltradingcompany.com",
-          url: "https://gltradingcompany.com/contact"
+          url: "https://gltradingcompany.com/contact",
+          mainEntity: {
+            "@type": "Organization",
+            name: "GL Trading Company",
+            url: "https://gltradingcompany.com",
+            logo: "https://gltradingcompany.com/logo-6.png",
+            contactPoint: {
+              "@type": "ContactPoint",
+              telephone: "+91-93015-32323",
+              contactType: "sales",
+              email: "info@gltradingcompany.com",
+              areaServed: "IN",
+              availableLanguage: ["English", "Hindi"]
+            },
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "B-2 Raj Lakshmi Warehousing LaxmiBai Nagar Industrial Area, Kila Maidan",
+              addressLocality: "Indore",
+              addressRegion: "M.P.",
+              postalCode: "452006",
+              addressCountry: "IN"
+            }
+          }
         }}
       />
       <main className="flex-1 pt-20">
