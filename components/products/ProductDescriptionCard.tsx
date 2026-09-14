@@ -50,15 +50,17 @@ export function ProductDescriptionCard({
           "@type": "Product",
           name: title,
           description: description,
-          image: image,
+          image: image.startsWith('/') ? `https://gltradingcompany.com${image}` : image,
           brand: {
             "@type": "Brand",
             name: "GL Trading Company"
           },
           offers: {
             "@type": "Offer",
+            url: "https://gltradingcompany.com/contact",
+            priceCurrency: "INR",
             availability: "https://schema.org/InStock",
-            url: "https://gltradingcompany.com/contact"
+            description: "Call for price"
           },
           additionalProperty: [
             { "@type": "PropertyValue", name: "Material", value: specs.material },

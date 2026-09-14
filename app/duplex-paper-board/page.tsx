@@ -26,19 +26,47 @@ export default function DuplexPaperBoardPage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "Product",
-          name: "Duplex Paper Board",
-          description: "High-quality Duplex Paper Board for packaging and printing applications.",
-          url: "https://gltradingcompany.com/duplex-paper-board",
-          brand: {
-            "@type": "Brand",
-            name: "GL Trading Company"
-          },
-          offers: {
-            "@type": "Offer",
-            availability: "https://schema.org/InStock",
-            url: "https://gltradingcompany.com/contact"
-          }
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://gltradingcompany.com/duplex-paper-board/#webpage",
+              url: "https://gltradingcompany.com/duplex-paper-board",
+              name: "Duplex Paper Board Solutions | GL Trading Company",
+              description: "High-quality Duplex Paper Board for packaging and printing applications."
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://gltradingcompany.com/duplex-paper-board/#breadcrumb",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Products",
+                  item: "https://gltradingcompany.com/products"
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Duplex Paper Board",
+                  item: "https://gltradingcompany.com/duplex-paper-board"
+                }
+              ]
+            },
+            {
+              "@type": "Product",
+              "@id": "https://gltradingcompany.com/duplex-paper-board/#product",
+              name: "Duplex Paper Board",
+              image: "https://gltradingcompany.com/duplex-board.jpg",
+              description: "High-quality Duplex Paper Board for packaging and printing applications.",
+              offers: {
+                "@type": "Offer",
+                url: "https://gltradingcompany.com/contact",
+                priceCurrency: "INR",
+                availability: "https://schema.org/InStock",
+                description: "Call for price"
+              }
+            }
+          ]
         }}
       />
       <div className="flex max-w-container-max mx-auto w-full pt-20">

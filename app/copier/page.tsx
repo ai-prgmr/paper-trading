@@ -25,19 +25,47 @@ export default function CopierPage() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "Product",
-          name: "Copier Paper",
-          description: "High-quality A3 and A4 Copier Paper (70-100 GSM) for office and commercial use.",
-          url: "https://gltradingcompany.com/copier",
-          brand: {
-            "@type": "Brand",
-            name: "GL Trading Company"
-          },
-          offers: {
-            "@type": "Offer",
-            availability: "https://schema.org/InStock",
-            url: "https://gltradingcompany.com/contact"
-          }
+          "@graph": [
+            {
+              "@type": "WebPage",
+              "@id": "https://gltradingcompany.com/copier/#webpage",
+              url: "https://gltradingcompany.com/copier",
+              name: "Copier Paper Solutions | GL Trading Company",
+              description: "High-quality A3 and A4 Copier Paper (70-100 GSM) for office and commercial use."
+            },
+            {
+              "@type": "BreadcrumbList",
+              "@id": "https://gltradingcompany.com/copier/#breadcrumb",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Products",
+                  item: "https://gltradingcompany.com/products"
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Copier Paper",
+                  item: "https://gltradingcompany.com/copier"
+                }
+              ]
+            },
+            {
+              "@type": "Product",
+              "@id": "https://gltradingcompany.com/copier/#product",
+              name: "Copier Paper",
+              image: "https://gltradingcompany.com/copier-paper.jpg",
+              description: "High-quality A3 and A4 Copier Paper (70-100 GSM) for office and commercial use.",
+              offers: {
+                "@type": "Offer",
+                url: "https://gltradingcompany.com/contact",
+                priceCurrency: "INR",
+                availability: "https://schema.org/InStock",
+                description: "Call for price"
+              }
+            }
+          ]
         }}
       />
       <div className="flex max-w-container-max mx-auto w-full pt-20">

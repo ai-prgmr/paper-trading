@@ -26,9 +26,21 @@ export default function Page() {
       <JsonLd
         data={{
           "@context": "https://schema.org",
-          "@type": "WebSite",
-          name: "GL Trading Company",
-          url: "https://gltradingcompany.com"
+          "@graph": [
+            {
+              "@type": "WebSite",
+              "@id": "https://gltradingcompany.com/#website",
+              name: "GL Trading Company",
+              url: "https://gltradingcompany.com"
+            },
+            {
+              "@type": "WebPage",
+              "@id": "https://gltradingcompany.com/#webpage",
+              url: "https://gltradingcompany.com",
+              name: "Premium Paper & Board Trading | GL Trading Company",
+              isPartOf: { "@id": "https://gltradingcompany.com/#website" }
+            }
+          ]
         }}
       />
       <main className="flex-1 pt-20">

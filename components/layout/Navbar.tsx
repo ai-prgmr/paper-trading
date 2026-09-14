@@ -11,7 +11,7 @@ export function Navbar() {
 
   const navItems = [
     { name: "Home", href: "/", icon: "home" },
-    { name: "Products", href: "/kraft-paper-solutions", icon: "inventory_2", matchPrefix: ["/kraft-paper-solutions", "/box-board", "/duplex-paper-board", "/copier"] },
+    { name: "Products", href: "/products", icon: "inventory_2", matchPrefix: ["/products", "/kraft-paper-solutions", "/box-board", "/duplex-paper-board", "/copier"] },
     { name: "About Us", href: "/about", icon: "corporate_fare" },
     { name: "Contact", href: "/contact", icon: "mail" },
   ]
