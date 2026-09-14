@@ -1,0 +1,22 @@
+# GL Trading Company
+
+GL Trading Company is a premier B2B supplier of high-quality paper and board products based in India, with over 80+ years of legacy and trust. We specialize in providing reliable and sustainable packaging solutions to our clients.
+
+## Core Products
+- **Kraft Paper**: Durable and sustainable solutions for various packaging needs.
+- **Duplex Board**: High-grade paperboards for reliable structural packaging.
+- **Folding Box Board (FBB)**: Premium materials ideal for rigid packaging and high-end boxes.
+- **Copier Paper**: High-quality A3 and A4 Copier Paper (70-100 GSM) for office and commercial use.
+
+## Our Legacy
+- **1940**: Founded by Late Shri Govindlal ji Kabra in the textile industry.
+- **1976**: Mr. Rajesh Kabra diversified into the paper industry.
+- **1999**: Mr. Vedant Kabra (Managing Director) joined and modernized operations.
+- **2016**: GL Trading Company was officially established as a specialized paper supply entity.
+
+## Contact Information
+- **Website**: https://gltradingcompany.com
+- **Phone**: +91-93015-32323
+- **Email**: info@gltradingcompany.com
+
+For a comprehensive overview of our product lines, history, and sustainability practices, please refer to our full documentation at [llms-full.txt](./llms-full.txt).
