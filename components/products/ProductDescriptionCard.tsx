@@ -1,5 +1,4 @@
 import Link from "next/link"
-import { JsonLd } from "@/components/seo/JsonLd"
 
 export interface ProductSpec {
   material: string
@@ -11,6 +10,7 @@ export interface ProductSpec {
 }
 
 export interface ProductDescriptionCardProps {
+  id?: string
   title: string
   price?: string
   description: string
@@ -21,6 +21,7 @@ export interface ProductDescriptionCardProps {
 }
 
 export function ProductDescriptionCard({
+  id,
   title,
   description,
   badgeText,
@@ -43,32 +44,7 @@ export function ProductDescriptionCard({
   const whatsappUrl = `https://wa.me/919301532323?text=${whatsappMessage}`
 
   return (
-    <article className="bg-surface industrial-border rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-sm hover:shadow-md transition-shadow text-left min-w-0">
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "Product",
-          name: title,
-          description: description,
-          image: image.startsWith('/') ? `https://gltradingcompany.com${image}` : image,
-          brand: {
-            "@type": "Brand",
-            name: "GL Trading Company"
-          },
-          offers: {
-            "@type": "Offer",
-            url: "https://gltradingcompany.com/contact",
-            priceCurrency: "INR",
-            availability: "https://schema.org/InStock",
-            description: "Call for price"
-          },
-          additionalProperty: [
-            { "@type": "PropertyValue", name: "Material", value: specs.material },
-            { "@type": "PropertyValue", name: "GSM Range", value: specs.gsmRange },
-            { "@type": "PropertyValue", name: "Eco Friendly", value: specs.eco }
-          ]
-        }}
-      />
+    <article id={id} className="bg-surface industrial-border rounded-lg overflow-hidden flex flex-col lg:flex-row shadow-sm hover:shadow-md transition-shadow text-left min-w-0">
       {/* Left side: Image */}
       <div className="lg:w-1/3 relative h-64 lg:h-auto border-b lg:border-b-0 lg:border-r border-outline-variant shrink-0">
         <img className="w-full h-full object-cover" alt={title} src={image} />
@@ -106,7 +82,7 @@ export function ProductDescriptionCard({
                 <span className="text-[10px] text-outline font-label-sm uppercase tracking-wider mb-1">
                   {item.label}
                 </span>
-                <span className="font-medium text-sm text-on-surface font-body-md break-words">
+                <span className="font-medium text-sm text-on-surface font-body-md wrap-break-word">
                   {item.value}
                 </span>
               </div>

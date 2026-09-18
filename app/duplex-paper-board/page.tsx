@@ -3,6 +3,7 @@ import { ProductSidebar } from "@/components/products/ProductSidebar"
 import { ProductCategoryMobileNav } from "@/components/products/ProductCategoryMobileNav"
 import { DuplexBoardHero } from "@/components/products/DuplexBoardHero"
 import { DuplexVariantsList } from "@/components/products/DuplexVariantsList"
+import { duplexVariants } from "@/components/products/duplexData"
 import { ProductCTA } from "@/components/products/ProductCTA"
 import { DuplexTrustSection } from "@/components/products/DuplexTrustSection"
 import { JsonLd } from "@/components/seo/JsonLd"
@@ -28,11 +29,13 @@ export default function DuplexPaperBoardPage() {
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "WebPage",
+              "@type": "CollectionPage",
               "@id": "https://gltradingcompany.com/duplex-paper-board/#webpage",
               url: "https://gltradingcompany.com/duplex-paper-board",
               name: "Duplex Paper Board Solutions | GL Trading Company",
-              description: "High-quality Duplex Paper Board for packaging and printing applications."
+              description: "High-quality Duplex Paper Board for packaging and printing applications.",
+              breadcrumb: { "@id": "https://gltradingcompany.com/duplex-paper-board/#breadcrumb" },
+              mainEntity: { "@id": "https://gltradingcompany.com/duplex-paper-board/#productlist" }
             },
             {
               "@type": "BreadcrumbList",
@@ -53,18 +56,34 @@ export default function DuplexPaperBoardPage() {
               ]
             },
             {
-              "@type": "Product",
-              "@id": "https://gltradingcompany.com/duplex-paper-board/#product",
-              name: "Duplex Paper Board",
-              image: "https://gltradingcompany.com/duplex-board.jpg",
-              description: "High-quality Duplex Paper Board for packaging and printing applications.",
-              offers: {
-                "@type": "Offer",
-                url: "https://gltradingcompany.com/contact",
-                priceCurrency: "INR",
-                availability: "https://schema.org/InStock",
-                description: "Call for price"
-              }
+              "@type": "ItemList",
+              "@id": "https://gltradingcompany.com/duplex-paper-board/#productlist",
+              itemListElement: duplexVariants.map((v, i) => {
+                return {
+                  "@type": "ListItem",
+                  position: i + 1,
+                  item: {
+                    "@type": "Product",
+                    "@id": `https://gltradingcompany.com/duplex-paper-board#${v.id}`,
+                    name: v.title,
+                    description: v.description,
+                    image: v.image.startsWith('/') ? `https://gltradingcompany.com${v.image}` : v.image,
+                    url: `https://gltradingcompany.com/duplex-paper-board#${v.id}`,
+                    brand: {
+                      "@type": "Brand",
+                      name: "GL Trading Company"
+                    },
+                    additionalProperty: [
+                      { "@type": "PropertyValue", name: "Material", value: "Duplex Board" },
+                      { "@type": "PropertyValue", name: "GSM Range", value: v.gsm },
+                      { "@type": "PropertyValue", name: "Eco Friendly", value: "Yes" },
+                      { "@type": "PropertyValue", name: "Usage", value: v.usage },
+                      { "@type": "PropertyValue", name: "Color", value: v.color },
+                      { "@type": "PropertyValue", name: "Shape", value: v.type }
+                    ]
+                  }
+                }
+              })
             }
           ]
         }}

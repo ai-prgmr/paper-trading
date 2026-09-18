@@ -3,19 +3,20 @@ import { ProductSidebar } from "@/components/products/ProductSidebar"
 import { ProductCategoryMobileNav } from "@/components/products/ProductCategoryMobileNav"
 import { KraftHero } from "@/components/products/KraftHero"
 import { KraftProductsList } from "@/components/products/KraftProductsList"
-import { KraftSustainabilityCommitment } from "@/components/products/KraftSustainabilityCommitment"
+import { kraftProducts } from "@/components/products/kraftData"
 import { ProductCTA } from "@/components/products/ProductCTA"
+import { KraftSustainabilityCommitment } from "@/components/products/KraftSustainabilityCommitment"
 import { JsonLd } from "@/components/seo/JsonLd"
 
 export const metadata: Metadata = {
-  title: "Kraft Paper Solutions",
-  description: "Durable and sustainable Kraft Paper solutions for your packaging needs, by GL Trading Company.",
+  title: "Kraft Paper Solutions | GL Trading Company",
+  description: "Durable and sustainable Kraft Paper solutions for your packaging needs, offered by GL Trading Company.",
   alternates: {
     canonical: "/kraft-paper-solutions",
   },
   openGraph: {
     title: "Kraft Paper Solutions | GL Trading Company",
-    description: "Durable and sustainable Kraft Paper solutions for your packaging needs, by GL Trading Company.",
+    description: "Durable and sustainable Kraft Paper solutions for your packaging needs.",
     url: "/kraft-paper-solutions",
   }
 }
@@ -28,11 +29,13 @@ export default function KraftPaperPage() {
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "WebPage",
+              "@type": "CollectionPage",
               "@id": "https://gltradingcompany.com/kraft-paper-solutions/#webpage",
               url: "https://gltradingcompany.com/kraft-paper-solutions",
               name: "Kraft Paper Solutions | GL Trading Company",
-              description: "Durable and sustainable Kraft Paper solutions for your packaging needs."
+              description: "Durable and sustainable Kraft Paper solutions for your packaging needs.",
+              breadcrumb: { "@id": "https://gltradingcompany.com/kraft-paper-solutions/#breadcrumb" },
+              mainEntity: { "@id": "https://gltradingcompany.com/kraft-paper-solutions/#productlist" }
             },
             {
               "@type": "BreadcrumbList",
@@ -53,18 +56,34 @@ export default function KraftPaperPage() {
               ]
             },
             {
-              "@type": "Product",
-              "@id": "https://gltradingcompany.com/kraft-paper-solutions/#product",
-              name: "Kraft Paper",
-              image: "https://gltradingcompany.com/kraft-paper.jpg",
-              description: "Durable and sustainable Kraft Paper solutions for your packaging needs.",
-              offers: {
-                "@type": "Offer",
-                url: "https://gltradingcompany.com/contact",
-                priceCurrency: "INR",
-                availability: "https://schema.org/InStock",
-                description: "Call for price"
-              }
+              "@type": "ItemList",
+              "@id": "https://gltradingcompany.com/kraft-paper-solutions/#productlist",
+              itemListElement: kraftProducts.map((v, i) => {
+                return {
+                  "@type": "ListItem",
+                  position: i + 1,
+                  item: {
+                    "@type": "Product",
+                    "@id": `https://gltradingcompany.com/kraft-paper-solutions#${v.id}`,
+                    name: v.title,
+                    description: v.subtitle,
+                    image: v.image.startsWith('/') ? `https://gltradingcompany.com${v.image}` : v.image,
+                    url: `https://gltradingcompany.com/kraft-paper-solutions#${v.id}`,
+                    brand: {
+                      "@type": "Brand",
+                      name: "GL Trading Company"
+                    },
+                    additionalProperty: [
+                      { "@type": "PropertyValue", name: "Material", value: "Kraft Paper" },
+                      { "@type": "PropertyValue", name: "GSM Range", value: v.gsm },
+                      { "@type": "PropertyValue", name: "Eco Friendly", value: v.ecoText },
+                      { "@type": "PropertyValue", name: "Usage", value: v.usage },
+                      { "@type": "PropertyValue", name: "Color", value: v.color },
+                      { "@type": "PropertyValue", name: "Shape", value: v.shape }
+                    ]
+                  }
+                }
+              })
             }
           ]
         }}

@@ -5,7 +5,7 @@ import { ProductDescriptionCard } from "./ProductDescriptionCard"
 
 export function CoatedDuplexGrid() {
   const allGsms = [150, 180, 220, 230, 285, 296, 320, 370, 380, 400, 430]
-  
+
   const [gsmFilter, setGsmFilter] = useState<"all" | "light" | "heavy">("all")
   const [sortBy, setSortBy] = useState<"asc" | "desc">("asc")
 
@@ -73,6 +73,7 @@ export function CoatedDuplexGrid() {
         {sortedGsms.map((gsm) => (
           <ProductDescriptionCard
             key={gsm}
+            id={`coated-duplex-${gsm}`}
             title={`${gsm} GSM Coated Duplex Board`}
             description="Premium multi-layered duplex board with a high-brightness coated front surface and sturdy grey back. Perfect for high-speed automated packaging lines."
             badgeText={`${gsm} GSM`}

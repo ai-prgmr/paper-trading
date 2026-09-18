@@ -3,19 +3,20 @@ import { ProductSidebar } from "@/components/products/ProductSidebar"
 import { ProductCategoryMobileNav } from "@/components/products/ProductCategoryMobileNav"
 import { BoxBoardHero } from "@/components/products/BoxBoardHero"
 import { BoxBoardList } from "@/components/products/BoxBoardList"
-import { BoxBoardTrustSection } from "@/components/products/BoxBoardTrustSection"
+import { boxBoardProducts } from "@/components/products/boxBoardData"
 import { ProductCTA } from "@/components/products/ProductCTA"
+import { BoxBoardTrustSection } from "@/components/products/BoxBoardTrustSection"
 import { JsonLd } from "@/components/seo/JsonLd"
 
 export const metadata: Metadata = {
-  title: "Box Board Solutions",
-  description: "Premium Box Board materials ideal for rigid packaging and premium boxes, provided by GL Trading Company.",
+  title: "Box Board (FBB/SBS) Solutions",
+  description: "Premium Box Board (FBB/SBS) solutions for high-end packaging, offered by GL Trading Company.",
   alternates: {
     canonical: "/box-board",
   },
   openGraph: {
-    title: "Box Board Solutions | GL Trading Company",
-    description: "Premium Box Board materials ideal for rigid packaging and premium boxes, provided by GL Trading Company.",
+    title: "Box Board (FBB/SBS) Solutions | GL Trading Company",
+    description: "Premium Box Board (FBB/SBS) solutions for high-end packaging.",
     url: "/box-board",
   }
 }
@@ -28,11 +29,13 @@ export default function BoxBoardPage() {
           "@context": "https://schema.org",
           "@graph": [
             {
-              "@type": "WebPage",
+              "@type": "CollectionPage",
               "@id": "https://gltradingcompany.com/box-board/#webpage",
               url: "https://gltradingcompany.com/box-board",
               name: "Box Board(FBB/SBS) Solutions | GL Trading Company",
-              description: "Premium Box Board materials ideal for rigid packaging and premium boxes."
+              description: "Premium Box Board materials ideal for rigid packaging and premium boxes.",
+              breadcrumb: { "@id": "https://gltradingcompany.com/box-board/#breadcrumb" },
+              mainEntity: { "@id": "https://gltradingcompany.com/box-board/#productlist" }
             },
             {
               "@type": "BreadcrumbList",
@@ -53,18 +56,34 @@ export default function BoxBoardPage() {
               ]
             },
             {
-              "@type": "Product",
-              "@id": "https://gltradingcompany.com/box-board/#product",
-              name: "Box Board",
-              image: "https://gltradingcompany.com/fbb.png",
-              description: "Premium Box Board materials ideal for rigid packaging and premium boxes.",
-              offers: {
-                "@type": "Offer",
-                url: "https://gltradingcompany.com/contact",
-                priceCurrency: "INR",
-                availability: "https://schema.org/InStock",
-                description: "Call for price"
-              }
+              "@type": "ItemList",
+              "@id": "https://gltradingcompany.com/box-board/#productlist",
+              itemListElement: boxBoardProducts.map((v, i) => {
+                return {
+                  "@type": "ListItem",
+                  position: i + 1,
+                  item: {
+                    "@type": "Product",
+                    "@id": `https://gltradingcompany.com/box-board#${v.id}`,
+                    name: v.title,
+                    description: v.subtitle,
+                    image: v.image.startsWith('/') ? `https://gltradingcompany.com${v.image}` : v.image,
+                    url: `https://gltradingcompany.com/box-board#${v.id}`,
+                    brand: {
+                      "@type": "Brand",
+                      name: "GL Trading Company"
+                    },
+                    additionalProperty: [
+                      { "@type": "PropertyValue", name: "Material", value: v.specs.material },
+                      { "@type": "PropertyValue", name: "GSM Range", value: v.specs.gsmRange },
+                      { "@type": "PropertyValue", name: "Eco Friendly", value: v.specs.eco },
+                      { "@type": "PropertyValue", name: "Usage", value: v.specs.usage },
+                      { "@type": "PropertyValue", name: "Color", value: v.specs.color },
+                      { "@type": "PropertyValue", name: "Shape", value: v.specs.shape }
+                    ]
+                  }
+                }
+              })
             }
           ]
         }}
