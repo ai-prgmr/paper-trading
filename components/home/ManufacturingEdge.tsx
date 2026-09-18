@@ -66,7 +66,7 @@ export function ManufacturingEdge() {
           <div className="absolute -top-10 -right-10 w-72 h-72 bg-secondary-container/30 rounded-full blur-3xl -z-10"></div>
           <div className="relative w-full h-full rounded-2xl overflow-hidden border border-border shadow-xl hover:shadow-2xl transition-shadow duration-300">
             <Image
-              src="/paper-trading/manufacturing-edge.png"
+              src="/manufacturing-edge.png"
               alt="GL Trading Company Advanced Manufacturing Mill Line"
               fill
               className="object-cover"

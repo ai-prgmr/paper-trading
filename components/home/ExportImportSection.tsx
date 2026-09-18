@@ -8,8 +8,7 @@ export function ExportImportSection() {
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0">
         <div className="absolute -top-1/2 -right-1/4 w-[100x0px] h-[1000px] rounded-full bg-linear-to-br from-[#064E3B]/40 to-transparent blur-3xl opacity-50"></div>
         <div className="absolute -bottom-1/2 -left-1/4 w-[800px] h-[800px] rounded-full bg-linear-to-tr from-primary/20 to-transparent blur-3xl opacity-50"></div>
-        {/* Subtle grid pattern for international/logistics feel */}
-        <div className="absolute inset-0 bg-[url('/noise.png')] opacity-10 mix-blend-overlay"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-primary-container via-surface to-secondary-container opacity-50"></div>
         <div
           className="absolute inset-0 opacity-[0.03]"
           style={{
