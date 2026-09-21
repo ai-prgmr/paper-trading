@@ -73,6 +73,14 @@ export default function KraftPaperPage() {
                       "@type": "Brand",
                       name: "GL Trading Company"
                     },
+                    offers: {
+                      "@type": "AggregateOffer",
+                      lowPrice: "33",
+                      highPrice: "39",
+                      priceCurrency: "INR",
+                      offerCount: "1",
+                      availability: "https://schema.org/InStock"
+                    },
                     additionalProperty: [
                       { "@type": "PropertyValue", name: "Material", value: "Kraft Paper" },
                       { "@type": "PropertyValue", name: "GSM Range", value: v.gsm },

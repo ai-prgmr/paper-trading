@@ -72,6 +72,14 @@ export default function CopierPage() {
                       "@type": "Brand",
                       name: "GL Trading Company"
                     },
+                    offers: {
+                      "@type": "AggregateOffer",
+                      lowPrice: "64",
+                      highPrice: "75",
+                      priceCurrency: "INR",
+                      offerCount: "1",
+                      availability: "https://schema.org/InStock"
+                    },
                     additionalProperty: [
                       { "@type": "PropertyValue", name: "Material", value: v.specs.material },
                       { "@type": "PropertyValue", name: "GSM Range", value: v.specs.gsmRange },

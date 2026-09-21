@@ -7,8 +7,11 @@ export function Footer() {
         <Link href="/" className="flex items-center gap-2">
           <Image alt="GL Trading Company" src="/logo-6.png" width={300} height={300} />
         </Link>
-        <p className="text-on-surface-variant font-body-md mb-6">
+        <p className="text-on-surface-variant font-body-md mb-2">
           ISO 9001:2015 certified trading enterprise specializing in high-grade industrial paper and board.
+        </p>
+        <p className="text-on-surface-variant font-body-md mb-6 font-semibold">
+          GSTIN: 23ANDPK6826C1ZD
         </p>
         <div className="flex gap-4">
           <a href="mailto:info@gltradingcompany.com" className="text-on-surface-variant hover:text-tertiary-fixed transition-colors" title="info@gltradingcompany.com">

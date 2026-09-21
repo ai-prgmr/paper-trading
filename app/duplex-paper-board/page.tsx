@@ -73,6 +73,14 @@ export default function DuplexPaperBoardPage() {
                       "@type": "Brand",
                       name: "GL Trading Company"
                     },
+                    offers: {
+                      "@type": "AggregateOffer",
+                      lowPrice: "42",
+                      highPrice: "50",
+                      priceCurrency: "INR",
+                      offerCount: "1",
+                      availability: "https://schema.org/InStock"
+                    },
                     additionalProperty: [
                       { "@type": "PropertyValue", name: "Material", value: "Duplex Board" },
                       { "@type": "PropertyValue", name: "GSM Range", value: v.gsm },
