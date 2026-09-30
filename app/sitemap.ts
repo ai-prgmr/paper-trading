@@ -10,10 +10,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     '/about',
     '/contact',
     '/box-board',
-    '/coated-duplex-board',
     '/duplex-paper-board',
     '/kraft-paper-solutions',
-    '/copier'
+    '/copier',
+    '/products'
   ];
 
   return routes.map((route) => ({
